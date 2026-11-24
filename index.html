@@ -1,43 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Early Bird Coffee | Specialty Coffee Shop in San Antonio, TX</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Start your morning at Early Bird Coffee in San Antonio, Texas. Discover specialty coffee, espresso, matcha, pastries, and welcoming everyday moments at Huebner Oaks.">
+    <title>Early Bird Coffee | Specialty Coffee in San Antonio, TX</title>
+
+    <meta name="description"
+          content="Discover Early Bird Coffee in San Antonio, Texas. Enjoy specialty coffee, espresso, refreshing beverages, pastries, and little moments worth waking up for.">
 
     <meta name="theme-color" content="#f5efe4">
+
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Early Bird Coffee | Good Mornings Start Here">
-    <meta property="og:description" content="Your neighborhood coffee destination in San Antonio, Texas. Good coffee. Better mornings.">
+
+    <meta property="og:title"
+          content="Early Bird Coffee | Good Mornings Start Here">
+
+    <meta property="og:description"
+          content="Good coffee. Better mornings. Discover Early Bird Coffee in San Antonio, Texas.">
+
     <meta property="og:image" content="eb1.png">
+
     <meta property="og:locale" content="en_US">
 
     <link rel="icon" type="image/jpeg" href="eblogo.jpg">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+          rel="stylesheet">
 
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "CafeOrCoffeeShop",
         "name": "Early Bird Coffee",
-        "url": "https://coffeewithearlybird.com/",
-        "telephone": "+1-210-857-7769",
-        "description": "Specialty coffee shop located in the Huebner Oaks Shopping Center in San Antonio, Texas.",
+        "description": "Specialty coffee shop in San Antonio, Texas.",
         "address": {
             "@type": "PostalAddress",
-            "streetAddress": "11745 I-10 Suite 527",
             "addressLocality": "San Antonio",
             "addressRegion": "TX",
-            "postalCode": "78230",
             "addressCountry": "US"
         },
         "geo": {
@@ -45,25 +57,18 @@
             "latitude": 29.5499848,
             "longitude": -98.5809147
         },
-        "hasMap": "https://www.google.com/maps/search/?api=1&query=Early+Bird+Coffee+San+Antonio+Texas",
-        "hasMenu": "https://coffeewithearlybird.com/pages/menu",
-        "servesCuisine": [
-            "Specialty Coffee",
-            "Espresso",
-            "Pastries"
-        ],
-        "sameAs": [
-            "https://www.instagram.com/earlybirdcoffee.sa/"
-        ]
+        "hasMap": "https://www.google.com/maps/place/Early+Bird+Coffee/@29.5499848,-98.5834896,882m/data=!3m5!1s0x865c67d77313b287:0xdc15fc8c6f4b75fa!8m2!3d29.5499848!4d-98.5809147!16s%2Fg%2F11qndynqc8"
     }
     </script>
 
     <style>
+
         /* =========================================
            01. DESIGN SYSTEM
         ========================================= */
 
         :root {
+
             --cream: #f5efe4;
             --ivory: #fffdf7;
             --sand: #e9dfcf;
@@ -81,24 +86,30 @@
 
             --container: 1280px;
             --gutter: clamp(24px, 5.5vw, 84px);
-            --section-space: clamp(68px, 9vw, 130px);
+            --section-space: clamp(70px, 9vw, 130px);
             --header-height: 88px;
 
             --transition: 350ms cubic-bezier(.22, 1, .36, 1);
+
         }
 
         *,
         *::before,
         *::after {
+
             box-sizing: border-box;
+
         }
 
         html {
+
             scroll-behavior: smooth;
             scroll-padding-top: 110px;
+
         }
 
         body {
+
             margin: 0;
             background: var(--cream);
             color: var(--espresso);
@@ -106,93 +117,137 @@
             font-size: 16px;
             line-height: 1.75;
             -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
+            overflow-x: clip;
+
         }
 
         body.menu-open,
         body.lightbox-open {
+
             overflow: hidden;
+
         }
 
-        h1, h2, h3, h4, p, figure {
+        h1,
+        h2,
+        h3,
+        h4,
+        p,
+        figure {
+
             margin: 0;
+
         }
 
-        h1, h2, h3 {
+        h1,
+        h2,
+        h3 {
+
             font-family: var(--font-heading);
             font-weight: 500;
             line-height: 1.12;
             letter-spacing: -0.035em;
+
         }
 
         h2 {
+
             font-size: clamp(38px, 5.2vw, 72px);
+
         }
 
         h3 {
+
             font-size: clamp(25px, 3vw, 35px);
+
         }
 
         p {
+
             color: var(--muted);
+
         }
 
         a {
+
             color: inherit;
             text-decoration: none;
+
+        }
+
+        img {
+
+            display: block;
+            max-width: 100%;
+
+        }
+
+        svg {
+
+            display: block;
+
         }
 
         button,
         input,
         select,
         textarea {
+
             font: inherit;
+
         }
 
         button {
+
             cursor: pointer;
-        }
 
-        img {
-            display: block;
-            max-width: 100%;
-        }
-
-        svg {
-            display: block;
         }
 
         [hidden] {
+
             display: none !important;
+
         }
 
         :focus-visible {
+
             outline: 3px solid var(--gold);
             outline-offset: 5px;
+
         }
 
         ::selection {
+
             background: var(--gold-light);
             color: var(--espresso);
+
         }
 
         section[id] {
-            scroll-margin-top: 20px;
+
+            scroll-margin-top: 15px;
+
         }
 
         .container {
+
             width: min(
                 var(--container),
                 calc(100% - var(--gutter) * 2)
             );
+
             margin-inline: auto;
+
         }
 
         .section {
+
             padding-block: var(--section-space);
+
         }
 
         .eyebrow {
+
             display: inline-flex;
             align-items: center;
             gap: 12px;
@@ -202,154 +257,183 @@
             text-transform: uppercase;
             line-height: 1.5;
             margin-bottom: 22px;
+
         }
 
         .eyebrow::before {
+
             content: "";
             width: 27px;
             height: 1px;
             background: currentColor;
-        }
 
-        .gold-text {
-            color: var(--gold);
-        }
-
-        .italic {
-            font-style: italic;
         }
 
         .section-copy {
+
             max-width: 540px;
             margin-top: 25px;
-            font-size: 16px;
+
         }
 
         .image-frame {
+
             position: relative;
             overflow: hidden;
             background: var(--sand);
+
         }
 
         .image-frame img {
+
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 1s cubic-bezier(.22,1,.36,1);
+
         }
 
-        .image-frame .moving-image {
-            transition: transform 900ms cubic-bezier(.2, .65, .3, 1);
-        }
+        .image-frame:hover img {
 
-        .image-frame:hover .moving-image {
             transform: scale(1.055);
+
         }
 
         .skip-link {
+
             position: fixed;
             top: 12px;
             left: 12px;
             z-index: 9999;
             padding: 12px 20px;
             background: var(--white);
-            color: var(--espresso);
             transform: translateY(-150%);
+
         }
 
         .skip-link:focus {
+
             transform: translateY(0);
+
         }
 
+
         /* =========================================
-           02. BUTTONS
+           02. BUTTON SYSTEM
         ========================================= */
 
         .button {
+
             min-height: 54px;
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 14px;
+            gap: 12px;
             padding: 15px 26px;
             border: 1px solid transparent;
             font-size: 13px;
             font-weight: 700;
-            letter-spacing: 0.035em;
+            letter-spacing: .035em;
             line-height: 1.4;
-            position: relative;
+
             transition:
                 background var(--transition),
                 color var(--transition),
                 border-color var(--transition),
                 transform var(--transition);
+
         }
 
         .button:hover {
+
             transform: translateY(-3px);
+
         }
 
         .button svg,
         .text-link svg {
+
             width: 18px;
             height: 18px;
             flex-shrink: 0;
             transition: transform var(--transition);
+
         }
 
         .button:hover svg,
         .text-link:hover svg {
+
             transform: translateX(4px);
+
         }
 
         .button-primary {
+
             background: var(--gold-light);
             color: var(--espresso);
+
         }
 
         .button-primary:hover {
+
             background: var(--white);
+
         }
 
         .button-dark {
+
             background: var(--espresso);
             color: var(--white);
+
         }
 
         .button-dark:hover {
+
             background: var(--brown);
+
         }
 
         .button-outline {
-            background: transparent;
+
             border-color: rgba(255,255,255,.55);
+            background: transparent;
             color: var(--white);
+
         }
 
         .button-outline:hover {
+
             background: var(--white);
             color: var(--espresso);
-            border-color: var(--white);
+
         }
 
         .button-outline-dark {
-            border-color: var(--espresso);
+
             background: transparent;
+            border-color: var(--espresso);
             color: var(--espresso);
+
         }
 
         .button-outline-dark:hover {
+
             background: var(--espresso);
             color: var(--white);
+
         }
 
         .button-group {
+
             display: flex;
             align-items: center;
             flex-wrap: wrap;
             gap: 14px;
+
         }
 
         .text-link {
+
             display: inline-flex;
             align-items: center;
             gap: 12px;
@@ -358,17 +442,22 @@
             font-size: 13px;
             font-weight: 700;
             transition: color var(--transition);
+
         }
 
         .text-link:hover {
+
             color: var(--gold);
+
         }
 
+
         /* =========================================
-           03. SCROLL PROGRESS & HEADER
+           03. SCROLL PROGRESS AND NAVIGATION
         ========================================= */
 
         .scroll-progress {
+
             position: fixed;
             top: 0;
             left: 0;
@@ -379,67 +468,88 @@
             transform-origin: left;
             z-index: 2000;
             pointer-events: none;
+
         }
 
         .site-header {
+
             position: sticky;
             top: 0;
             z-index: 1000;
-            background: rgba(245,239,228,.97);
+            background: rgba(245,239,228,.98);
             border-bottom: 1px solid transparent;
+
             transition:
                 background var(--transition),
                 border-color var(--transition),
                 box-shadow var(--transition);
+
         }
 
         .site-header.scrolled {
+
             background: rgba(255,253,247,.98);
             border-color: var(--line);
             box-shadow: 0 6px 25px rgba(41,33,25,.045);
+
         }
 
         .nav-container {
-            width: min(1440px, calc(100% - var(--gutter) * 2));
+
+            width: min(
+                1440px,
+                calc(100% - var(--gutter) * 2)
+            );
+
             min-height: var(--header-height);
             margin-inline: auto;
             display: flex;
             align-items: center;
             justify-content: space-between;
             gap: 24px;
+
         }
 
         .brand {
+
             display: inline-flex;
             align-items: center;
             flex-shrink: 0;
+
         }
 
         .brand img {
+
             width: 155px;
-            height: 67px;
+            height: 70px;
             object-fit: contain;
+
         }
 
         .nav-links {
+
             display: flex;
             align-items: center;
             gap: clamp(18px, 2.6vw, 38px);
             list-style: none;
-            margin: 0;
             padding: 0;
+            margin: 0;
+
         }
 
         .nav-links a {
+
             position: relative;
             display: block;
             padding-block: 10px;
             font-size: 13px;
             font-weight: 600;
             white-space: nowrap;
+
         }
 
         .nav-links a::after {
+
             content: "";
             position: absolute;
             bottom: 5px;
@@ -450,21 +560,28 @@
             transform: scaleX(0);
             transform-origin: left;
             transition: transform var(--transition);
+
         }
 
         .nav-links a:hover::after,
         .nav-links a.active::after {
+
             transform: scaleX(1);
+
         }
 
         .nav-cta {
+
             min-height: 43px;
             padding: 11px 22px;
             white-space: nowrap;
+
         }
 
         .menu-toggle {
+
             display: none;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             width: 46px;
@@ -473,37 +590,49 @@
             border: 1px solid var(--line);
             background: transparent;
             color: var(--espresso);
+
         }
 
         .menu-toggle span {
-            display: block;
+
             width: 23px;
             height: 2px;
             background: currentColor;
             transition: transform var(--transition);
+
         }
 
         .menu-toggle span + span {
+
             margin-top: 6px;
+
         }
 
         .menu-toggle[aria-expanded="true"] span:first-child {
+
             transform: translateY(4px) rotate(45deg);
+
         }
 
         .menu-toggle[aria-expanded="true"] span:last-child {
+
             transform: translateY(-4px) rotate(-45deg);
+
         }
 
         .mobile-visit {
+
             display: none;
+
         }
 
+
         /* =========================================
-           04. CINEMATIC HERO
+           04. HERO SECTION
         ========================================= */
 
         .hero {
+
             position: relative;
             isolation: isolate;
             min-height: clamp(570px, 83svh, 830px);
@@ -512,94 +641,118 @@
             overflow: hidden;
             background: var(--espresso);
             color: var(--white);
+
         }
 
         .hero-background {
+
             position: absolute;
             inset: -12%;
             z-index: -3;
             will-change: transform;
+
         }
 
         .hero-background img {
+
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center 55%;
+
         }
 
         .hero::before {
+
             content: "";
             position: absolute;
             inset: 0;
             z-index: -2;
-            background:
-                linear-gradient(
-                    90deg,
-                    rgba(24,19,15,.89) 0%,
-                    rgba(24,19,15,.72) 34%,
-                    rgba(24,19,15,.28) 75%,
-                    rgba(24,19,15,.19) 100%
-                );
+
+            background: linear-gradient(
+                90deg,
+                rgba(24,19,15,.89) 0%,
+                rgba(24,19,15,.72) 34%,
+                rgba(24,19,15,.28) 75%,
+                rgba(24,19,15,.19) 100%
+            );
+
         }
 
         .hero::after {
+
             content: "";
             position: absolute;
-            inset: 0;
+            inset: 22px;
             z-index: -1;
             border: 1px solid rgba(255,255,255,.18);
-            margin: 22px;
             pointer-events: none;
+
         }
 
         .hero-content {
+
             width: min(1440px, 100%);
             margin-inline: auto;
+
             padding:
-                75px
+                60px
                 clamp(40px, 8.5vw, 145px)
-                112px;
+                105px;
+
             position: relative;
+
         }
 
         .hero-content-inner {
-            max-width: 780px;
+
+            max-width: 800px;
             position: relative;
             z-index: 2;
+
         }
 
         .hero .eyebrow {
+
             color: var(--gold-light);
             margin-bottom: 20px;
+
         }
 
         .hero h1 {
-            font-size: clamp(60px, 7.6vw, 116px);
+
+            font-size: clamp(58px, 7.6vw, 110px);
             line-height: .99;
-            letter-spacing: -0.055em;
-            max-width: 850px;
+            letter-spacing: -.055em;
+
         }
 
         .hero h1 em {
+
             display: block;
             font-weight: 400;
             color: var(--gold-light);
+
         }
 
         .hero-description {
+
             color: rgba(255,255,255,.87);
             font-size: clamp(15px, 1.45vw, 19px);
             max-width: 510px;
             margin-top: 26px;
             line-height: 1.8;
+
         }
 
         .hero .button-group {
+
             margin-top: 31px;
+
         }
 
         .hero-location {
+
             position: absolute;
             right: var(--gutter);
             bottom: 49px;
@@ -608,16 +761,19 @@
             gap: 13px;
             color: rgba(255,255,255,.88);
             font-size: 12px;
-            font-weight: 500;
+
         }
 
         .hero-location svg {
+
             width: 22px;
             height: 22px;
             color: var(--gold-light);
+
         }
 
         .hero-sun {
+
             position: absolute;
             top: 11%;
             right: 8%;
@@ -625,20 +781,26 @@
             color: var(--gold-light);
             opacity: .55;
             pointer-events: none;
+
         }
 
         .hero-sun svg {
+
             width: 100%;
             animation: sunRotate 55s linear infinite;
+
         }
 
         @keyframes sunRotate {
+
             to {
                 transform: rotate(360deg);
             }
+
         }
 
         .scroll-indicator {
+
             position: absolute;
             bottom: 40px;
             left: clamp(40px, 8.5vw, 145px);
@@ -650,98 +812,119 @@
             text-transform: uppercase;
             letter-spacing: .17em;
             color: rgba(255,255,255,.75);
+
         }
 
         .scroll-line {
+
             width: 1px;
             height: 36px;
             position: relative;
             overflow: hidden;
             background: rgba(255,255,255,.25);
+
         }
 
         .scroll-line::after {
+
             content: "";
             position: absolute;
             width: 1px;
             height: 18px;
             background: var(--gold-light);
             animation: scrollDown 2s infinite;
+
         }
 
         @keyframes scrollDown {
+
             from {
                 transform: translateY(-18px);
             }
+
             to {
                 transform: translateY(36px);
             }
+
         }
+
 
         /* =========================================
            05. BRAND STRIP
         ========================================= */
 
         .brand-strip {
+
             padding: 23px var(--gutter);
             background: var(--gold-light);
             color: var(--espresso);
             overflow: hidden;
+
         }
 
         .brand-strip-inner {
+
             display: flex;
             align-items: center;
             justify-content: space-evenly;
             gap: 25px;
             max-width: 1200px;
             margin-inline: auto;
+
         }
 
         .brand-strip span {
+
             font-family: var(--font-heading);
             font-size: clamp(14px, 1.7vw, 21px);
             font-style: italic;
             white-space: nowrap;
+
         }
 
-        .strip-star {
-            font-size: 22px;
-            font-style: normal !important;
-        }
 
         /* =========================================
            06. ABOUT SECTION
         ========================================= */
 
         .about {
-            position: relative;
+
             background: var(--cream);
+
         }
 
         .about-grid {
+
             display: grid;
             grid-template-columns: 1.05fr .85fr;
             gap: clamp(45px, 8vw, 115px);
             align-items: center;
+
         }
 
         .about-visual {
+
             position: relative;
             min-width: 0;
             padding: 0 30px 32px 0;
+
         }
 
         .about-image {
+
             aspect-ratio: 4 / 4.6;
+
         }
 
         .about-image img {
+
             position: absolute;
             inset: 0;
+
         }
 
         .about-visual::before {
+
             content: "";
             position: absolute;
             top: 34px;
@@ -750,9 +933,11 @@
             right: 0;
             border: 1px solid var(--gold);
             pointer-events: none;
+
         }
 
         .about-caption {
+
             position: absolute;
             right: 0;
             bottom: 0;
@@ -764,83 +949,108 @@
             font-size: 21px;
             font-style: italic;
             line-height: 1.4;
+
         }
 
         .about-content .eyebrow {
+
             color: var(--olive);
+
         }
 
         .about-content h2 em {
+
             display: block;
             color: var(--olive);
+
         }
 
         .about-content p + p {
+
             margin-top: 18px;
+
         }
 
         .about-content .text-link {
+
             margin-top: 27px;
+
         }
 
         .about-signature {
+
             margin-top: 30px;
             font-size: 13px;
             font-weight: 600;
             letter-spacing: .08em;
             text-transform: uppercase;
             color: var(--brown);
+
         }
+
 
         /* =========================================
            07. MENU SHOWCASE
         ========================================= */
 
         .menu-section {
+
             background: var(--ivory);
             border-block: 1px solid var(--line);
+
         }
 
         .section-heading {
+
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
             gap: 40px;
             margin-bottom: 50px;
+
         }
 
         .section-heading-copy {
+
             max-width: 400px;
             padding-bottom: 5px;
+
         }
 
         .menu-grid {
+
             display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
+            grid-template-columns: repeat(4,minmax(0,1fr));
             gap: 24px;
+
         }
 
         .menu-card {
+
             min-width: 0;
+
         }
 
         .menu-card:nth-child(even) {
+
             margin-top: 45px;
+
         }
 
         .menu-image {
-            aspect-ratio: 3 / 3.8;
-        }
 
-        .menu-image img {
-            transition: transform 800ms cubic-bezier(.22,1,.36,1);
+            aspect-ratio: 3 / 3.8;
+
         }
 
         .menu-card:hover img {
+
             transform: scale(1.09);
+
         }
 
         .menu-number {
+
             position: absolute;
             top: 12px;
             left: 12px;
@@ -852,24 +1062,31 @@
             color: var(--espresso);
             font-size: 11px;
             font-weight: 700;
+
         }
 
         .menu-card-content {
-            padding: 20px 0 0;
+
+            padding-top: 20px;
+
         }
 
         .menu-card h3 {
+
             font-size: clamp(23px, 2vw, 30px);
-            letter-spacing: -.04em;
             margin-bottom: 12px;
+
         }
 
         .menu-card p {
+
             font-size: 14px;
             line-height: 1.75;
+
         }
 
         .menu-bottom {
+
             margin-top: 50px;
             padding-top: 28px;
             border-top: 1px solid var(--line);
@@ -877,23 +1094,29 @@
             justify-content: space-between;
             align-items: center;
             gap: 25px;
+
         }
 
         .menu-bottom p {
+
             font-size: 13px;
+
         }
 
         .photo-disclosure {
+
             font-size: 11px;
-            color: var(--muted);
             margin-top: 22px;
+
         }
 
+
         /* =========================================
-           08. PARALLAX FEATURE
+           08. CINEMATIC PARALLAX SECTION
         ========================================= */
 
         .parallax-feature {
+
             position: relative;
             min-height: clamp(450px, 65vw, 650px);
             display: grid;
@@ -903,97 +1126,128 @@
             background: var(--espresso);
             text-align: center;
             color: var(--white);
+
         }
 
         .parallax-background {
+
             position: absolute;
             inset: -15%;
             z-index: -3;
             will-change: transform;
+
         }
 
         .parallax-background img {
+
             width: 100%;
             height: 100%;
             object-fit: cover;
-            object-position: center;
+
         }
 
         .parallax-feature::before {
+
             content: "";
             position: absolute;
             inset: 0;
             background: rgba(28,21,16,.64);
             z-index: -2;
+
         }
 
         .feature-content {
+
             max-width: 1000px;
             padding: 80px var(--gutter);
+
         }
 
         .feature-content .eyebrow {
+
             color: var(--gold-light);
+
         }
 
         .feature-content h2 {
+
             font-size: clamp(48px, 7vw, 100px);
             line-height: 1.05;
+
         }
 
         .feature-content h2 em {
+
             display: block;
             color: var(--gold-light);
+
         }
 
         .feature-content p {
+
             max-width: 500px;
             color: rgba(255,255,255,.85);
             margin: 25px auto 30px;
+
         }
 
         .feature-decoration {
+
             width: 85px;
             height: 85px;
             margin: 0 auto 22px;
             color: var(--gold-light);
+
         }
 
+
         /* =========================================
-           09. EXPERIENCE
+           09. EXPERIENCE SECTION
         ========================================= */
 
         .experience {
+
             background: var(--cream);
+
         }
 
         .experience-heading {
+
             text-align: center;
             max-width: 820px;
             margin: 0 auto 55px;
+
         }
 
         .experience-heading p {
+
             max-width: 550px;
             margin: 22px auto 0;
+
         }
 
         .experience-grid {
+
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(3,minmax(0,1fr));
+
         }
 
         .experience-item {
-            position: relative;
-            padding: 28px clamp(20px, 3vw, 45px);
+
+            padding: 28px clamp(20px,3vw,45px);
             text-align: center;
+
         }
 
         .experience-item + .experience-item {
+
             border-left: 1px solid var(--line);
+
         }
 
         .experience-icon {
+
             display: grid;
             place-items: center;
             width: 78px;
@@ -1003,267 +1257,565 @@
             color: var(--brown);
             margin: 0 auto 25px;
             transition: transform var(--transition);
+
         }
 
         .experience-item:hover .experience-icon {
+
             transform: translateY(-7px) rotate(-5deg);
+
         }
 
         .experience-icon svg {
+
             width: 34px;
             height: 34px;
+
         }
 
         .experience-item h3 {
+
             font-size: 28px;
             margin-bottom: 14px;
+
         }
 
         .experience-item p {
+
             font-size: 14px;
+
         }
 
+
         /* =========================================
-           10. EDITORIAL GALLERY
+           10. UPDATED MAGNETIC GALLERY
+
+           Images are always visible.
+           No reveal-mask or opacity hiding.
+           Magnetic movement uses independent
+           transform layers.
         ========================================= */
 
         .gallery {
+
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
             background: var(--espresso);
             color: var(--white);
-            overflow: hidden;
+            padding-block: clamp(85px, 10vw, 150px);
+
+        }
+
+        .gallery::before {
+
+            content: "EARLY BIRD";
+
+            position: absolute;
+            top: 48%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+
+            font-family: var(--font-heading);
+            font-size: clamp(100px, 19vw, 320px);
+            font-weight: 600;
+            letter-spacing: -.07em;
+            line-height: 1;
+
+            color: rgba(255,255,255,.035);
+            white-space: nowrap;
+
+            pointer-events: none;
+            z-index: -1;
+
+        }
+
+        .gallery .container {
+
+            position: relative;
+            z-index: 2;
+
         }
 
         .gallery .eyebrow {
+
             color: var(--gold-light);
+
+        }
+
+        .gallery .section-heading {
+
+            margin-bottom: clamp(35px,6vw,75px);
+
+        }
+
+        .gallery .section-heading h2 {
+
+            color: var(--white);
+
+        }
+
+        .gallery .section-heading h2 em {
+
+            color: var(--gold-light);
+
         }
 
         .gallery .section-heading p {
-            color: rgba(255,255,255,.65);
+
+            color: rgba(255,255,255,.68);
+
+        }
+
+        .gallery-heading-content {
+
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+
+        }
+
+        .gallery-index {
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 18px;
+            font-size: 10px;
+            font-weight: 600;
+            letter-spacing: .17em;
+            text-transform: uppercase;
+            color: var(--gold-light);
+
+        }
+
+        .gallery-index::before {
+
+            content: "";
+            width: 35px;
+            height: 1px;
+            background: var(--gold);
+
         }
 
         .gallery-grid {
+
             display: grid;
-            grid-template-columns: 1.15fr .85fr;
-            gap: clamp(20px, 4vw, 55px);
+
+            grid-template-columns:
+                minmax(0,1.15fr)
+                minmax(0,.85fr);
+
+            gap: clamp(25px,5vw,75px);
             align-items: start;
+
+            padding-top: 50px;
+            padding-bottom: 85px;
+
         }
 
         .gallery-item {
+
+            position: relative;
             min-width: 0;
+            margin: 0;
+            opacity: 1;
+            visibility: visible;
+
         }
 
         .gallery-item:nth-child(2) {
-            margin-top: 90px;
+
+            margin-top: 100px;
+
+        }
+
+        .magnetic-gallery-layer {
+
+            position: relative;
+            width: 100%;
+            transform: translate3d(0,0,0);
+            will-change: transform;
+
         }
 
         .gallery-button {
-            display: block;
+
             position: relative;
-            padding: 0;
-            border: none;
+            display: block;
             width: 100%;
+            padding: 0;
+            border: 0;
             background: var(--brown);
             color: var(--white);
             overflow: hidden;
+            cursor: zoom-in;
             text-align: left;
+
         }
 
-        .gallery-item img {
+        .gallery-button img {
+
+            display: block;
             width: 100%;
             height: auto;
-            transition: transform 850ms cubic-bezier(.22,1,.36,1);
+            min-height: 160px;
+            object-fit: contain;
+            opacity: 1;
+            visibility: visible;
+
+            transition:
+                transform 1.2s cubic-bezier(.22,1,.36,1),
+                filter .6s ease;
+
         }
 
         .gallery-button:hover img {
-            transform: scale(1.045);
+
+            transform: scale(1.065);
+            filter: brightness(1.06);
+
+        }
+
+        .gallery-button::after {
+
+            content: "";
+            position: absolute;
+            inset: 14px;
+            border: 1px solid rgba(255,255,255,.3);
+            pointer-events: none;
+            transition: inset .6s ease;
+
+        }
+
+        .gallery-button:hover::after {
+
+            inset: 22px;
+
+        }
+
+        .gallery-number {
+
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 3;
+            color: var(--white);
+            background: rgba(41,33,25,.7);
+            padding: 8px 14px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: .1em;
+
         }
 
         .gallery-expand {
+
             position: absolute;
-            right: 18px;
-            bottom: 18px;
-            width: 47px;
-            height: 47px;
-            border: 1px solid rgba(255,255,255,.6);
-            background: rgba(41,33,25,.6);
+            right: 25px;
+            bottom: 25px;
+            width: 48px;
+            height: 48px;
             display: grid;
             place-items: center;
-            transition: background var(--transition);
-        }
+            border: 1px solid rgba(255,255,255,.65);
+            background: rgba(41,33,25,.75);
+            color: var(--white);
+            z-index: 3;
 
-        .gallery-button:hover .gallery-expand {
-            background: var(--gold);
+            transition:
+                background .4s ease,
+                transform .4s ease,
+                color .4s ease;
+
         }
 
         .gallery-expand svg {
+
             width: 20px;
             height: 20px;
+
+        }
+
+        .gallery-button:hover .gallery-expand {
+
+            background: var(--gold-light);
+            color: var(--espresso);
+            transform: rotate(5deg);
+
         }
 
         .gallery-meta {
-            padding-top: 15px;
+
             display: flex;
+            align-items: center;
             justify-content: space-between;
-            gap: 15px;
-            color: rgba(255,255,255,.65);
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-top: 20px;
             font-size: 11px;
-            letter-spacing: .1em;
+            font-weight: 500;
+            letter-spacing: .13em;
             text-transform: uppercase;
+            color: rgba(255,255,255,.7);
+
         }
+
+        .gallery-meta::after {
+
+            content: "";
+            display: block;
+            width: 100%;
+            height: 1px;
+            margin-top: 5px;
+            background: rgba(255,255,255,.15);
+
+        }
+
+        .gallery-bottom {
+
+            text-align: center;
+            margin-top: 5px;
+
+        }
+
+        .magnetic-gallery-progress {
+
+            width: min(180px,50%);
+            height: 2px;
+            margin: 0 auto;
+            background: rgba(255,255,255,.15);
+            overflow: hidden;
+
+        }
+
+        .magnetic-gallery-progress span {
+
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: var(--gold-light);
+            transform: scaleX(0);
+            transform-origin: left;
+            will-change: transform;
+
+        }
+
+        .magnetic-gallery-label {
+
+            margin-top: 15px;
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: .2em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,.6);
+
+        }
+
+        .gallery-bottom .text-link {
+
+            color: var(--gold-light);
+            margin-top: 20px;
+
+        }
+
+        .gallery-decoration {
+
+            position: absolute;
+            top: 28%;
+            right: -60px;
+            width: 200px;
+            height: 200px;
+            color: var(--gold-light);
+            opacity: .07;
+            pointer-events: none;
+
+        }
+
+        .gallery-decoration svg {
+
+            width: 100%;
+            height: 100%;
+            animation: sunRotate 80s linear infinite;
+
+        }
+
 
         /* =========================================
            11. COMMUNITY SECTION
         ========================================= */
 
         .community {
+
             position: relative;
             background: var(--sand);
             text-align: center;
             overflow: hidden;
+
         }
 
         .community-inner {
-            position: relative;
+
             max-width: 860px;
             margin-inline: auto;
+
         }
 
         .community-mark {
+
             font-size: 85px;
             line-height: 1;
             font-family: var(--font-heading);
             color: var(--gold);
             margin-bottom: 5px;
+
         }
 
         .community h2 {
-            font-size: clamp(38px, 5.5vw, 74px);
+
+            font-size: clamp(38px,5.5vw,74px);
+
         }
 
         .community h2 em {
+
             color: var(--olive);
+
         }
 
         .community p {
+
             max-width: 550px;
             margin: 24px auto;
+
         }
 
         .community-links {
+
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 25px;
+
         }
+
 
         /* =========================================
            12. VISIT SECTION
         ========================================= */
 
         .visit {
+
             background: var(--ivory);
+
         }
 
         .visit-grid {
+
             display: grid;
             grid-template-columns: .85fr 1.15fr;
             align-items: stretch;
-            gap: clamp(35px, 6vw, 85px);
+            gap: clamp(35px,6vw,85px);
+
         }
 
         .visit-content {
+
             min-width: 0;
+
         }
 
         .visit-content h2 {
+
             margin-bottom: 22px;
+
         }
 
         .visit-intro {
+
             max-width: 470px;
+
         }
 
         .visit-information {
+
             margin-top: 34px;
             border-top: 1px solid var(--line);
+
         }
 
         .info-row {
+
             display: grid;
             grid-template-columns: 27px 1fr;
             gap: 17px;
             padding: 22px 0;
             border-bottom: 1px solid var(--line);
+
         }
 
         .info-row > svg {
+
             width: 23px;
             height: 23px;
             color: var(--olive);
             margin-top: 4px;
+
         }
 
         .info-row h3 {
+
             font-family: var(--font-body);
             font-size: 13px;
             font-weight: 700;
             letter-spacing: .07em;
             text-transform: uppercase;
             margin-bottom: 8px;
+
         }
 
         .info-row p,
-        .info-row a,
-        .hours-list {
+        .info-row a {
+
             font-size: 14px;
+
         }
 
-        .hours-list {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            color: var(--muted);
-        }
+        .info-row a:not(.button) {
 
-        .hours-list li {
-            display: flex;
-            justify-content: space-between;
-            gap: 12px;
-            max-width: 340px;
-            padding-block: 3px;
-        }
-
-        .hours-note {
-            font-size: 12px !important;
-            line-height: 1.5;
-            margin-top: 10px;
-        }
-
-        .hours-note a {
-            font-size: inherit;
             text-decoration: underline;
+            text-underline-offset: 4px;
+
         }
 
         .visit .button-group {
+
             margin-top: 28px;
+
         }
 
         .map-container {
+
             position: relative;
             min-height: 520px;
             border: 1px solid var(--line);
             background: var(--sand);
+
         }
 
         .map-container iframe {
+
             display: block;
             width: 100%;
             height: 100%;
             min-height: 520px;
             border: 0;
+
         }
 
         .map-label {
+
             position: absolute;
             right: 16px;
             bottom: 30px;
@@ -1273,120 +1825,163 @@
             border: 1px solid var(--line);
             max-width: 330px;
             pointer-events: none;
+
         }
 
         .map-label strong {
+
             font-family: var(--font-heading);
             font-size: 23px;
             font-weight: 500;
+
         }
 
         .map-label p {
+
             font-size: 12px;
+
         }
+
 
         /* =========================================
            13. CONTACT FORM
         ========================================= */
 
         .contact {
+
             background: var(--cream);
             border-top: 1px solid var(--line);
+
         }
 
         .contact-grid {
+
             display: grid;
             grid-template-columns: .75fr 1.25fr;
-            gap: clamp(35px, 7vw, 100px);
+            gap: clamp(35px,7vw,100px);
             align-items: start;
+
         }
 
         .contact-copy {
+
             padding-top: 22px;
+
         }
 
         .contact-copy h2 em {
+
             display: block;
             color: var(--olive);
+
         }
 
         .contact-copy p {
+
             max-width: 420px;
             margin-top: 25px;
+
         }
 
         .contact-direct {
+
             margin-top: 32px;
             padding-top: 25px;
             border-top: 1px solid var(--line);
             display: grid;
             gap: 10px;
+
         }
 
         .contact-direct span {
+
             font-size: 11px;
             text-transform: uppercase;
             letter-spacing: .15em;
             font-weight: 700;
+
         }
 
         .contact-direct a {
+
             font-family: var(--font-heading);
-            font-size: clamp(23px, 3vw, 35px);
+            font-size: clamp(23px,3vw,35px);
+
         }
 
         .contact-form {
+
             background: var(--ivory);
             border: 1px solid var(--line);
-            padding: clamp(25px, 4.5vw, 55px);
+            padding: clamp(25px,4.5vw,55px);
+
         }
 
         .form-heading {
+
             margin-bottom: 28px;
+
         }
 
         .form-heading h3 {
+
             margin-bottom: 8px;
+
         }
 
         .form-heading p {
+
             font-size: 13px;
+
         }
 
         .form-grid {
+
             display: grid;
-            grid-template-columns: repeat(2, minmax(0, 1fr));
+            grid-template-columns: repeat(2,minmax(0,1fr));
             gap: 21px;
+
         }
 
         .form-field {
+
             min-width: 0;
+
         }
 
         .form-field.full-width {
+
             grid-column: 1 / -1;
+
         }
 
         .form-field label {
+
             display: block;
             margin-bottom: 8px;
             font-size: 13px;
             font-weight: 600;
+
         }
 
         .required-mark {
+
             color: #a34e38;
+
         }
 
         .optional-mark {
+
             color: var(--muted);
             font-weight: 400;
             font-size: 12px;
+
         }
 
         .form-field input,
         .form-field select,
         .form-field textarea {
+
             width: 100%;
             background: #fbf8f2;
             border: 1px solid #d9d0c2;
@@ -1396,159 +1991,211 @@
             font-size: 14px;
             color: var(--espresso);
             outline: none;
+
             transition:
                 border-color var(--transition),
                 box-shadow var(--transition);
+
         }
 
         .form-field input:focus,
         .form-field select:focus,
         .form-field textarea:focus {
+
             border-color: var(--olive);
             box-shadow: 0 0 0 3px rgba(92,98,80,.12);
+
         }
 
         .form-field input::placeholder,
         .form-field textarea::placeholder {
+
             color: #91877b;
+
         }
 
         .form-field textarea {
+
             min-height: 140px;
             resize: vertical;
+
         }
 
         .form-field select {
+
             appearance: none;
             padding-right: 38px;
+
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='%2349372c' stroke-width='1.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
             background-position: right 12px center;
             background-repeat: no-repeat;
+
         }
 
         .form-field [aria-invalid="true"] {
+
             border-color: #ad4539;
+
         }
 
         .field-error {
+
             display: block;
             color: #a63830;
             font-size: 12px;
             line-height: 1.5;
+
         }
 
         .field-error:not(:empty) {
+
             margin-top: 6px;
+
         }
 
         .consent {
+
             display: flex;
             gap: 11px;
             align-items: flex-start;
             margin-top: 23px;
+
         }
 
         .consent input {
+
             width: 18px;
             height: 18px;
             flex-shrink: 0;
             accent-color: var(--olive);
             margin: 4px 0 0;
+
         }
 
         .consent label {
+
             color: var(--muted);
             font-size: 12px;
             line-height: 1.65;
             cursor: pointer;
+
         }
 
         .submit-button {
+
             width: 100%;
             margin-top: 24px;
+
         }
 
         .submit-button:disabled {
+
             cursor: not-allowed;
             opacity: .7;
             transform: none;
+
         }
 
         .form-status:not(:empty) {
+
             margin-top: 17px;
             padding: 13px 15px;
             border: 1px solid var(--line);
             font-size: 13px;
             line-height: 1.6;
+
         }
 
         .form-status.success {
+
             color: #315b39;
             background: #eaf4e9;
             border-color: #b4cdb5;
+
         }
 
         .form-status.error {
+
             color: #9d392e;
             background: #fff0ea;
             border-color: #e3b7ae;
+
         }
 
         .form-status.notice {
+
             color: #76582f;
             background: #fff7e5;
             border-color: #dfcca4;
+
         }
 
         .honeypot {
+
             position: absolute;
             left: -10000px;
             width: 1px;
             height: 1px;
             overflow: hidden;
+
         }
 
         .form-footnote {
+
             margin-top: 15px;
             font-size: 11px;
             text-align: center;
+
         }
 
+
         /* =========================================
-           14. FINAL CTA
+           14. FINAL CALL TO ACTION
         ========================================= */
 
         .final-cta {
+
             background: var(--gold-light);
             position: relative;
             overflow: hidden;
+
         }
 
         .final-cta-inner {
+
             display: grid;
             grid-template-columns: 1fr auto;
             align-items: center;
             gap: 40px;
             position: relative;
+
         }
 
         .final-cta h2 {
+
             max-width: 820px;
-            font-size: clamp(40px, 6vw, 83px);
+            font-size: clamp(40px,6vw,83px);
+
         }
 
         .final-cta p {
+
             margin-top: 18px;
             color: var(--brown);
             max-width: 480px;
+
         }
 
         .final-cta .button-group {
+
             flex-direction: column;
             align-items: stretch;
+
         }
 
         .final-sun {
+
             position: absolute;
             width: 430px;
             height: 430px;
@@ -1557,41 +2204,51 @@
             opacity: .1;
             color: var(--espresso);
             pointer-events: none;
+
         }
+
 
         /* =========================================
            15. FOOTER
         ========================================= */
 
         .site-footer {
+
             background: var(--espresso);
             color: var(--white);
             padding: 75px 0 28px;
+
         }
 
         .footer-grid {
+
             display: grid;
             grid-template-columns: 1.3fr .75fr 1fr .8fr;
-            gap: clamp(25px, 4vw, 55px);
+            gap: clamp(25px,4vw,55px);
+
         }
 
         .footer-logo {
+
             width: 160px;
             height: 85px;
             object-fit: contain;
-            object-position: left center;
             background: var(--ivory);
             padding: 8px;
             margin-bottom: 20px;
+
         }
 
         .footer-description {
+
             color: rgba(255,255,255,.65);
             font-size: 14px;
             max-width: 280px;
+
         }
 
         .footer-column h3 {
+
             font-family: var(--font-body);
             font-weight: 700;
             font-size: 12px;
@@ -1599,56 +2256,73 @@
             text-transform: uppercase;
             color: var(--gold-light);
             margin-bottom: 23px;
+
         }
 
         .footer-links {
+
             display: grid;
             gap: 11px;
             list-style: none;
             padding: 0;
             margin: 0;
+
         }
 
         .footer-links a,
         .footer-column p {
+
             font-size: 13px;
             color: rgba(255,255,255,.68);
             transition: color var(--transition);
+
         }
 
         .footer-links a:hover {
+
             color: var(--gold-light);
+
         }
 
         .footer-socials {
+
             display: flex;
             align-items: center;
             gap: 12px;
+
         }
 
         .social-icon {
+
             display: grid;
             place-items: center;
             width: 43px;
             height: 43px;
             color: var(--white);
             border: 1px solid rgba(255,255,255,.25);
+
             transition:
                 color var(--transition),
                 background var(--transition);
+
         }
 
         .social-icon:hover {
+
             background: var(--gold-light);
             color: var(--espresso);
+
         }
 
         .social-icon svg {
+
             width: 19px;
             height: 19px;
+
         }
 
         .footer-bottom {
+
             border-top: 1px solid rgba(255,255,255,.13);
             margin-top: 50px;
             padding-top: 24px;
@@ -1656,48 +2330,61 @@
             align-items: center;
             justify-content: space-between;
             gap: 15px;
+
         }
 
         .footer-bottom p {
+
             font-size: 12px;
             color: rgba(255,255,255,.5);
+
         }
 
         .back-to-top {
+
             display: inline-flex;
             align-items: center;
             gap: 10px;
             color: var(--gold-light);
             font-size: 12px;
+
         }
 
         .back-to-top svg {
+
             width: 16px;
             height: 16px;
+
         }
 
+
         /* =========================================
-           16. IMAGE LIGHTBOX
+           16. GALLERY LIGHTBOX
         ========================================= */
 
         .lightbox {
+
             position: fixed;
             inset: 0;
             z-index: 3000;
-            background: rgba(20,16,13,.96);
+            background: rgba(20,16,13,.97);
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 75px 65px;
+
         }
 
         .lightbox-image {
+
             max-width: 100%;
-            max-height: 85svh;
+            max-height: 82svh;
             object-fit: contain;
+
         }
 
         .lightbox-control {
+
             position: absolute;
             display: grid;
             place-items: center;
@@ -1707,35 +2394,47 @@
             border: 1px solid rgba(255,255,255,.3);
             background: rgba(255,255,255,.05);
             transition: background var(--transition);
+
         }
 
         .lightbox-control:hover {
+
             background: rgba(255,255,255,.2);
+
         }
 
         .lightbox-control svg {
+
             width: 23px;
             height: 23px;
+
         }
 
         .lightbox-close {
+
             right: 22px;
             top: 22px;
+
         }
 
         .lightbox-prev {
+
             left: 12px;
             top: 50%;
             transform: translateY(-50%);
+
         }
 
         .lightbox-next {
+
             right: 12px;
             top: 50%;
             transform: translateY(-50%);
+
         }
 
         .lightbox-caption {
+
             position: absolute;
             left: 20px;
             right: 20px;
@@ -1743,225 +2442,331 @@
             text-align: center;
             color: var(--white);
             font-size: 13px;
+
         }
+
 
         /* =========================================
            17. MOBILE STICKY CTA
         ========================================= */
 
         .mobile-sticky {
+
             display: none;
+
         }
+
 
         /* =========================================
            18. SCROLL ANIMATIONS
+
+           Gallery uses its own independent
+           animation system.
         ========================================= */
 
         .js .reveal {
+
             opacity: 0;
             transform: translateY(30px);
+
             transition:
                 opacity 850ms cubic-bezier(.22,1,.36,1),
                 transform 850ms cubic-bezier(.22,1,.36,1);
-            transition-delay: var(--delay, 0ms);
+
+            transition-delay: var(--delay,0ms);
+
         }
 
         .js .reveal-left {
+
             opacity: 0;
             transform: translateX(-35px);
+
             transition:
                 opacity 950ms cubic-bezier(.22,1,.36,1),
                 transform 950ms cubic-bezier(.22,1,.36,1);
+
         }
 
         .js .reveal-right {
+
             opacity: 0;
             transform: translateX(35px);
+
             transition:
                 opacity 950ms cubic-bezier(.22,1,.36,1),
                 transform 950ms cubic-bezier(.22,1,.36,1);
+
         }
 
         .js .reveal-scale {
+
             opacity: 0;
             transform: scale(.94);
+
             transition:
                 opacity 900ms ease,
                 transform 1000ms cubic-bezier(.22,1,.36,1);
-        }
 
-        .js .reveal-mask {
-            clip-path: inset(0 100% 0 0);
-            transition: clip-path 1100ms cubic-bezier(.22,1,.36,1);
         }
 
         .js .reveal.is-visible,
         .js .reveal-left.is-visible,
         .js .reveal-right.is-visible,
         .js .reveal-scale.is-visible {
+
             opacity: 1;
             transform: none;
+
         }
 
-        .js .reveal-mask.is-visible {
-            clip-path: inset(0 0 0 0);
+        /* Gallery visibility protection */
+
+        #gallery,
+        #gallery .gallery-item,
+        #gallery .gallery-heading-content,
+        #gallery .gallery-button,
+        #gallery .gallery-button img {
+
+            opacity: 1;
+            visibility: visible;
+            clip-path: none;
+
         }
 
         .hero-enter {
-            animation: heroEnter 1000ms cubic-bezier(.22,1,.36,1) both;
+
+            animation: heroEnter 1000ms
+                       cubic-bezier(.22,1,.36,1) both;
+
         }
 
         .hero-enter-delay-1 {
+
             animation-delay: 100ms;
+
         }
 
         .hero-enter-delay-2 {
+
             animation-delay: 220ms;
+
         }
 
         .hero-enter-delay-3 {
+
             animation-delay: 340ms;
+
         }
 
         @keyframes heroEnter {
+
             from {
+
                 opacity: 0;
                 transform: translateY(22px);
+
             }
+
             to {
+
                 opacity: 1;
                 transform: translateY(0);
+
             }
+
         }
+
 
         /* =========================================
            19. TABLET RESPONSIVENESS
         ========================================= */
 
-        @media (max-width: 1100px) {
+        @media (max-width:1100px) {
 
             :root {
+
                 --header-height: 80px;
+
             }
 
             .nav-container {
+
                 gap: 18px;
+
             }
 
             .nav-links {
+
                 gap: 20px;
+
             }
 
             .brand img {
-                width: 130px;
+
+                width: 135px;
+
             }
 
             .nav-cta {
+
                 padding-inline: 17px;
+
             }
 
             .menu-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                grid-template-columns: repeat(2,minmax(0,1fr));
                 gap: 35px;
+
             }
 
             .menu-card:nth-child(even) {
+
                 margin-top: 30px;
+
             }
 
             .menu-image {
+
                 aspect-ratio: 4 / 4.2;
+
+            }
+
+            .gallery-grid {
+
+                gap: 35px;
+                padding-bottom: 65px;
+
+            }
+
+            .gallery-item:nth-child(2) {
+
+                margin-top: 65px;
+
             }
 
             .footer-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                grid-template-columns: repeat(2,minmax(0,1fr));
                 gap: 40px;
+
             }
+
         }
 
-        @media (max-width: 900px) {
+
+        @media (max-width:900px) {
 
             :root {
+
                 --gutter: 30px;
                 --section-space: 85px;
+
             }
 
             .nav-cta {
+
                 display: none;
+
             }
 
             .hero-content {
+
                 padding-inline: 60px;
+
             }
 
             .hero-sun {
+
                 top: 8%;
                 right: 7%;
                 width: 100px;
+
             }
 
             .about-grid {
+
                 gap: 45px;
+
             }
 
             .contact-grid {
+
                 grid-template-columns: 1fr 1.2fr;
                 gap: 35px;
+
             }
 
             .form-grid {
+
                 grid-template-columns: 1fr;
+
             }
 
             .visit-grid {
+
                 gap: 35px;
+
             }
 
             .final-cta-inner {
+
                 grid-template-columns: 1fr;
+
             }
 
             .final-cta .button-group {
+
                 flex-direction: row;
                 align-items: center;
+
             }
+
         }
+
 
         /* =========================================
            20. MOBILE RESPONSIVENESS
         ========================================= */
 
-        @media (max-width: 767px) {
+        @media (max-width:767px) {
 
             :root {
+
                 --header-height: 74px;
                 --gutter: 22px;
                 --section-space: 66px;
+
             }
 
             html {
+
                 scroll-padding-top: 88px;
+
             }
 
             body {
-                padding-bottom: 70px;
-            }
 
-            .nav-container {
-                min-height: var(--header-height);
+                padding-bottom: 75px;
+
             }
 
             .brand img {
+
                 width: 132px;
                 height: 57px;
+
             }
 
             .menu-toggle {
+
                 display: flex;
-                flex-direction: column;
+
             }
 
             .nav-links {
+
                 display: none;
                 position: fixed;
                 top: var(--header-height);
@@ -1974,387 +2779,626 @@
                 flex-direction: column;
                 align-items: stretch;
                 gap: 0;
+
             }
 
             .nav-links.open {
+
                 display: flex;
+
             }
 
             .nav-links li {
+
                 border-bottom: 1px solid var(--line);
+
             }
 
             .nav-links a {
+
                 padding: 17px 8px;
                 font-size: 22px;
                 font-family: var(--font-heading);
+
             }
 
             .nav-links a::after {
+
                 display: none;
+
             }
 
             .mobile-visit {
+
                 display: block;
                 margin-top: 22px;
                 border: none !important;
+
             }
 
             .mobile-visit .button {
+
+                display: flex;
                 width: 100%;
                 font-family: var(--font-body);
                 font-size: 14px;
+
             }
 
             .hero {
-                min-height: 620px;
-                min-height: min(720px, max(560px, 82svh));
+
+                min-height: 560px;
+                min-height: min(720px,max(560px,82svh));
                 text-align: center;
                 align-items: center;
+
             }
 
             .hero-content {
-                padding: 55px 27px 95px;
+
+                padding: 50px 27px 90px;
+
             }
 
             .hero-content-inner {
+
                 margin-inline: auto;
+
             }
 
             .hero h1 {
-                font-size: clamp(47px, 11vw, 76px);
+
+                font-size: clamp(47px,11vw,76px);
                 line-height: 1.04;
-                margin-inline: auto;
+
             }
 
             .hero-description {
+
                 font-size: 15px;
                 max-width: 420px;
                 margin: 20px auto 0;
+
             }
 
             .hero .button-group {
+
                 justify-content: center;
                 margin-top: 25px;
                 gap: 11px;
+
             }
 
             .hero .button {
+
                 min-height: 49px;
                 font-size: 12px;
                 padding-inline: 18px;
+
             }
 
             .hero::before {
+
                 background: rgba(24,19,15,.67);
+
             }
 
             .hero::after {
-                margin: 12px;
+
+                inset: 12px;
+
             }
 
             .hero-background {
+
                 inset: 0;
+
             }
 
             .hero-background img {
+
                 object-position: 60% center;
+
             }
 
-            .hero-sun {
-                display: none;
-            }
-
+            .hero-sun,
             .hero-location {
+
                 display: none;
+
             }
 
             .scroll-indicator {
+
                 bottom: 23px;
                 left: 50%;
                 transform: translateX(-50%);
                 white-space: nowrap;
+
             }
 
             .scroll-line {
+
                 height: 27px;
+
             }
 
             .brand-strip {
+
                 padding: 17px 15px;
+
             }
 
             .brand-strip-inner {
+
                 gap: 10px;
+
             }
 
             .brand-strip span {
+
                 font-size: 14px;
+
             }
 
             .brand-strip .desktop-strip {
+
                 display: none;
+
             }
 
             .about-grid,
             .visit-grid,
             .contact-grid {
+
                 grid-template-columns: 1fr;
                 gap: 35px;
+
             }
 
             .about-visual {
+
                 max-width: 550px;
                 width: 100%;
                 margin-inline: auto;
                 padding: 0 20px 23px 0;
+
             }
 
             .about-image {
+
                 aspect-ratio: 4 / 4.1;
+
             }
 
             .about-caption {
+
                 font-size: 18px;
                 padding: 15px 19px;
+
             }
 
             .about-content {
+
                 text-align: center;
+
             }
 
             .section-copy {
+
                 margin: 20px auto 0;
+
             }
 
             .section-heading {
+
                 text-align: center;
                 display: block;
                 margin-bottom: 34px;
+
             }
 
             .section-heading-copy {
+
                 max-width: 480px;
                 margin: 20px auto 0;
                 padding: 0;
+
             }
 
             .menu-grid {
+
                 gap: 28px 16px;
+
             }
 
             .menu-card:nth-child(even) {
+
                 margin-top: 0;
+
             }
 
             .menu-image {
+
                 aspect-ratio: 3 / 3.7;
+
             }
 
             .menu-card-content {
+
                 text-align: center;
                 padding-top: 15px;
+
             }
 
             .menu-card h3 {
-                font-size: clamp(20px, 5vw, 26px);
+
+                font-size: clamp(20px,5vw,26px);
+
             }
 
             .menu-card p {
+
                 font-size: 13px;
                 line-height: 1.6;
+
             }
 
             .menu-bottom {
+
                 flex-direction: column;
                 text-align: center;
                 margin-top: 35px;
+
             }
 
             .menu-bottom .button-group {
+
                 justify-content: center;
+
             }
 
             .photo-disclosure {
+
                 text-align: center;
+
             }
 
             .feature-content {
+
                 padding: 65px 25px;
+
             }
 
             .feature-content h2 {
-                font-size: clamp(40px, 10vw, 64px);
+
+                font-size: clamp(40px,10vw,64px);
+
             }
 
             .parallax-background {
+
                 inset: 0;
+
             }
 
             .parallax-feature {
+
                 min-height: 450px;
+
             }
 
             .experience-heading {
+
                 margin-bottom: 25px;
+
             }
 
             .experience-grid {
+
                 grid-template-columns: 1fr;
                 max-width: 450px;
                 margin-inline: auto;
+
             }
 
             .experience-item {
+
                 padding: 30px 14px;
+
             }
 
             .experience-item + .experience-item {
+
                 border-left: none;
                 border-top: 1px solid var(--line);
+
+            }
+
+
+            /* MOBILE MAGNETIC GALLERY */
+
+            .gallery {
+
+                padding-block: 65px;
+
+            }
+
+            .gallery .section-heading {
+
+                margin-bottom: 35px;
+
+            }
+
+            .gallery .section-heading h2 {
+
+                font-size: clamp(38px,10vw,55px);
+
+            }
+
+            .gallery-index {
+
+                justify-content: center;
+
             }
 
             .gallery-grid {
-                grid-template-columns: 1fr;
-                gap: 28px;
+
+                grid-template-columns: minmax(0,1fr);
+                gap: 35px;
+                padding-top: 0;
+                padding-bottom: 35px;
+
             }
 
+            .gallery-item,
             .gallery-item:nth-child(2) {
+
                 margin-top: 0;
+
+            }
+
+            .magnetic-gallery-layer {
+
+                transform: none !important;
+                will-change: auto;
+
+            }
+
+            .gallery-button img {
+
+                width: 100%;
+                height: auto;
+                min-height: 0;
+
+            }
+
+            .gallery-button::after {
+
+                inset: 10px;
+
+            }
+
+            .gallery-number {
+
+                top: 18px;
+                left: 18px;
+
+            }
+
+            .gallery-expand {
+
+                width: 42px;
+                height: 42px;
+                right: 18px;
+                bottom: 18px;
+
             }
 
             .gallery-meta {
+
                 font-size: 10px;
+                letter-spacing: .08em;
+
+            }
+
+            .gallery::before {
+
+                font-size: 100px;
+
+            }
+
+            .gallery-decoration {
+
+                width: 120px;
+                height: 120px;
+                right: -35px;
+
             }
 
             .visit-content {
+
                 text-align: center;
+
             }
 
             .visit-intro {
+
                 margin-inline: auto;
+
             }
 
             .visit-information {
+
                 text-align: left;
                 max-width: 500px;
                 margin-inline: auto;
+
             }
 
             .visit .button-group {
+
                 justify-content: center;
+
             }
 
             .map-container,
             .map-container iframe {
+
                 min-height: 380px;
+
             }
 
             .contact-copy {
+
                 text-align: center;
                 padding-top: 0;
+
             }
 
             .contact-copy p {
+
                 margin-inline: auto;
+
             }
 
             .contact-direct {
+
                 margin-top: 25px;
+
             }
 
             .contact-form {
+
                 padding: 25px 20px;
+
             }
 
             .form-heading {
+
                 text-align: center;
+
             }
 
             .form-grid {
+
                 grid-template-columns: 1fr;
                 gap: 18px;
+
             }
 
             .form-field input,
             .form-field textarea,
             .form-field select {
+
                 font-size: 16px;
+
             }
 
             .final-cta-inner {
+
                 text-align: center;
                 gap: 25px;
+
             }
 
             .final-cta p {
+
                 margin-inline: auto;
+
             }
 
             .final-cta .button-group {
+
                 justify-content: center;
+
             }
 
             .footer-grid {
-                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                grid-template-columns: repeat(2,minmax(0,1fr));
                 gap: 30px 20px;
+
             }
 
             .footer-brand {
+
                 grid-column: 1 / -1;
+
             }
 
             .footer-logo {
+
                 margin-inline: auto;
-                object-position: center;
+
             }
 
             .footer-description {
+
                 text-align: center;
                 margin-inline: auto;
+
             }
 
             .footer-column {
+
                 text-align: center;
+
             }
 
             .footer-column:last-child {
+
                 grid-column: 1 / -1;
+
             }
 
             .footer-socials {
+
                 justify-content: center;
+
             }
 
             .footer-bottom {
+
                 flex-direction: column;
                 text-align: center;
-                gap: 15px;
                 margin-top: 35px;
+
             }
 
             .site-footer {
+
                 padding-top: 50px;
+
             }
 
             .lightbox {
+
                 padding: 65px 48px;
+
             }
 
             .lightbox-control {
+
                 width: 36px;
                 height: 40px;
+
             }
 
             .lightbox-prev {
+
                 left: 6px;
+
             }
 
             .lightbox-next {
+
                 right: 6px;
+
             }
 
             .mobile-sticky {
+
                 position: fixed;
                 z-index: 900;
                 left: 0;
@@ -2364,179 +3408,222 @@
                 grid-template-columns: 1fr 1fr;
                 gap: 9px;
                 padding: 10px 13px;
-                padding-bottom: max(10px, env(safe-area-inset-bottom));
+
+                padding-bottom:
+                    max(10px,env(safe-area-inset-bottom));
+
                 background: var(--ivory);
                 border-top: 1px solid var(--line);
+
             }
 
             .mobile-sticky .button {
+
                 min-height: 46px;
                 padding: 12px 8px;
                 font-size: 12px;
                 gap: 7px;
+
             }
 
             .mobile-sticky svg {
+
                 width: 16px;
                 height: 16px;
+
             }
 
             .js .reveal-left,
             .js .reveal-right {
+
                 transform: translateY(22px);
+
             }
 
             .js .reveal-left.is-visible,
             .js .reveal-right.is-visible {
+
                 transform: none;
+
             }
+
         }
 
-        @media (max-width: 380px) {
+
+        /* =========================================
+           21. SMALL MOBILE DEVICES
+        ========================================= */
+
+        @media (max-width:380px) {
 
             :root {
+
                 --gutter: 18px;
+
             }
 
             .hero-content {
+
                 padding-inline: 22px;
+
             }
 
             .hero h1 {
-                font-size: clamp(43px, 12vw, 49px);
+
+                font-size: clamp(43px,12vw,49px);
+
             }
 
             .hero-description {
+
                 font-size: 14px;
+
             }
 
             .hero .eyebrow {
+
                 font-size: 10px;
                 gap: 8px;
+
             }
 
             .hero .button-group {
+
                 flex-direction: column;
                 width: 100%;
                 max-width: 260px;
                 margin-inline: auto;
+
             }
 
             .hero .button {
+
                 width: 100%;
+
             }
 
             .hero {
+
                 min-height: 570px;
+
             }
 
             .brand-strip span {
+
                 font-size: 12px;
+
             }
 
             .menu-grid {
+
                 grid-template-columns: 1fr;
+
             }
 
             .menu-image {
+
                 aspect-ratio: 4 / 3.6;
+
             }
 
             .visit .button-group,
             .final-cta .button-group,
             .menu-bottom .button-group {
+
                 flex-direction: column;
                 align-items: stretch;
                 width: 100%;
-            }
 
-            .hours-list {
-                font-size: 12px;
             }
 
             .footer-grid {
+
                 grid-template-columns: 1fr;
+
             }
 
             .footer-brand,
             .footer-column:last-child {
+
                 grid-column: auto;
+
             }
+
         }
 
+
         /* =========================================
-           21. ACCESSIBILITY
+           22. REDUCED MOTION ACCESSIBILITY
         ========================================= */
 
-        @media (prefers-reduced-motion: reduce) {
+        @media (prefers-reduced-motion:reduce) {
 
             html {
+
                 scroll-behavior: auto;
+
             }
 
             *,
             *::before,
             *::after {
+
                 animation-duration: .01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: .01ms !important;
+
             }
 
             .js .reveal,
             .js .reveal-left,
             .js .reveal-right,
-            .js .reveal-scale,
-            .js .reveal-mask {
+            .js .reveal-scale {
+
                 opacity: 1;
                 transform: none;
-                clip-path: none;
+
             }
 
             .hero-background,
-            .parallax-background {
+            .parallax-background,
+            .magnetic-gallery-layer {
+
                 transform: none !important;
+
             }
+
+            .magnetic-gallery-progress {
+
+                display: none;
+
+            }
+
         }
 
-        @media print {
-            .site-header,
-            .mobile-sticky,
-            .scroll-progress,
-            .contact-form,
-            .lightbox {
-                display: none !important;
-            }
-
-            body {
-                padding: 0;
-            }
-
-            .js .reveal,
-            .js .reveal-left,
-            .js .reveal-right,
-            .js .reveal-scale,
-            .js .reveal-mask {
-                opacity: 1;
-                transform: none;
-                clip-path: none;
-            }
-        }
     </style>
 
     <noscript>
+
         <style>
-            @media (max-width: 767px) {
+
+            @media (max-width:767px) {
+
                 .menu-toggle {
+
                     display: none;
+
                 }
 
                 .nav-container {
+
                     flex-wrap: wrap;
                     justify-content: center;
                     padding-bottom: 12px;
+
                 }
 
                 .nav-links {
+
                     display: flex;
                     position: static;
                     flex-direction: row;
@@ -2545,24 +3632,35 @@
                     padding: 0;
                     gap: 12px;
                     background: transparent;
+
                 }
 
                 .nav-links li {
-                    border: none;
+
+                    border: 0;
+
                 }
 
                 .nav-links a {
-                    font-family: Arial, sans-serif;
+
+                    font-family: Arial,sans-serif;
                     font-size: 12px;
                     padding: 5px;
+
                 }
 
                 .mobile-visit {
+
                     display: none;
+
                 }
+
             }
+
         </style>
+
     </noscript>
+
 </head>
 
 <body id="top">
@@ -2571,125 +3669,174 @@
         Skip to main content
     </a>
 
-    <!-- REUSABLE SVG ICONS -->
+
+    <!-- =========================================
+         REUSABLE SVG ICONS
+    ========================================== -->
 
     <svg xmlns="http://www.w3.org/2000/svg"
          style="position:absolute;width:0;height:0;overflow:hidden"
          aria-hidden="true">
 
         <symbol id="icon-arrow" viewBox="0 0 24 24">
+
             <path d="M4 12h15M13 6l6 6-6 6"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.6" stroke-linecap="round"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
                   stroke-linejoin="round"/>
+
         </symbol>
 
         <symbol id="icon-pin" viewBox="0 0 24 24">
+
             <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"
-                  fill="none" stroke="currentColor"
+                  fill="none"
+                  stroke="currentColor"
                   stroke-width="1.5"/>
+
             <circle cx="12" cy="10" r="2.7"
-                    fill="none" stroke="currentColor"
+                    fill="none"
+                    stroke="currentColor"
                     stroke-width="1.5"/>
+
         </symbol>
 
         <symbol id="icon-clock" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="9"
-                    fill="none" stroke="currentColor"
-                    stroke-width="1.5"/>
-            <path d="M12 6v6l4 2"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
-        </symbol>
 
-        <symbol id="icon-phone" viewBox="0 0 24 24">
-            <path d="M5 3H9l2 5-3 2a13 13 0 0 0 6 6l2-3 5 2v4c0 1-1 2-2 2C10 21 3 14 3 5c0-1 1-2 2-2Z"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linejoin="round"/>
+            <circle cx="12" cy="12" r="9"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"/>
+
+            <path d="M12 6v6l4 2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"/>
+
         </symbol>
 
         <symbol id="icon-cup" viewBox="0 0 40 40">
-            <g fill="none" stroke="currentColor"
-               stroke-width="1.5" stroke-linecap="round">
+
+            <g fill="none"
+               stroke="currentColor"
+               stroke-width="1.5"
+               stroke-linecap="round">
+
                 <path d="M6 17h25v8a10 10 0 0 1-10 10h-5A10 10 0 0 1 6 25Z"/>
+
                 <path d="M31 18h3a4 4 0 0 1 0 8h-3M3 38h31"/>
+
                 <path d="M12 12c-4-5 4-5 0-10M20 12c-4-5 4-5 0-10M27 12c-4-5 4-5 0-10"/>
+
             </g>
+
         </symbol>
 
         <symbol id="icon-heart" viewBox="0 0 40 40">
+
             <path d="M20 35 6 21C-3 12 10 0 20 12 30 0 43 12 34 21Z"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.6" stroke-linejoin="round"/>
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.6"
+                  stroke-linejoin="round"/>
+
         </symbol>
 
         <symbol id="icon-sun" viewBox="0 0 100 100">
-            <g fill="none" stroke="currentColor"
-               stroke-width="1.3" stroke-linecap="round">
+
+            <g fill="none"
+               stroke="currentColor"
+               stroke-width="1.3"
+               stroke-linecap="round">
+
                 <circle cx="50" cy="50" r="23"/>
+
                 <circle cx="50" cy="50" r="29"/>
+
                 <path d="M50 3v12M50 85v12M3 50h12M85 50h12
                          M16 16l9 9M75 75l9 9M16 84l9-9M75 25l9-9
                          M32 6l5 12M63 82l5 12M6 32l12 5M82 63l12 5
                          M6 68l12-5M82 37l12-5M32 94l5-12M63 18l5-12"/>
-            </g>
-        </symbol>
 
-        <symbol id="icon-instagram" viewBox="0 0 24 24">
-            <rect x="3" y="3" width="18" height="18" rx="5"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.6"/>
-            <circle cx="12" cy="12" r="4"
-                    fill="none" stroke="currentColor"
-                    stroke-width="1.6"/>
-            <circle cx="17.5" cy="6.7" r="1"
-                    fill="currentColor"/>
+            </g>
+
         </symbol>
 
         <symbol id="icon-mail" viewBox="0 0 24 24">
+
             <rect x="3" y="5" width="18" height="14" rx="1"
-                  fill="none" stroke="currentColor"
+                  fill="none"
+                  stroke="currentColor"
                   stroke-width="1.5"/>
+
             <path d="m3 6 9 7 9-7"
-                  fill="none" stroke="currentColor"
+                  fill="none"
+                  stroke="currentColor"
                   stroke-width="1.5"/>
+
         </symbol>
 
         <symbol id="icon-expand" viewBox="0 0 24 24">
+
             <path d="M8 3H3v5M16 3h5v5M3 16v5h5M21 16v5h-5"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"/>
+
         </symbol>
 
         <symbol id="icon-close" viewBox="0 0 24 24">
+
             <path d="m5 5 14 14M19 5 5 19"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"/>
+
         </symbol>
 
         <symbol id="icon-up" viewBox="0 0 24 24">
+
             <path d="M12 20V4M5 11l7-7 7 7"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"/>
+
         </symbol>
 
         <symbol id="icon-left" viewBox="0 0 24 24">
+
             <path d="m15 5-7 7 7 7"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"/>
+
         </symbol>
 
         <symbol id="icon-right" viewBox="0 0 24 24">
+
             <path d="m9 5 7 7-7 7"
-                  fill="none" stroke="currentColor"
-                  stroke-width="1.5" stroke-linecap="round"/>
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"/>
+
         </symbol>
+
     </svg>
+
 
     <div class="scroll-progress"
          id="scrollProgress"
          aria-hidden="true">
     </div>
+
 
     <!-- =========================================
          HEADER
@@ -2697,13 +3844,18 @@
 
     <header class="site-header" id="siteHeader">
 
-        <nav class="nav-container" aria-label="Main navigation">
+        <nav class="nav-container"
+             aria-label="Main navigation">
 
-            <a href="#top" class="brand" aria-label="Early Bird Coffee home">
+            <a href="#top"
+               class="brand"
+               aria-label="Early Bird Coffee home">
+
                 <img src="eblogo.jpg"
                      alt="Early Bird Coffee"
                      width="155"
-                     height="67">
+                     height="70">
+
             </a>
 
             <button class="menu-toggle"
@@ -2720,35 +3872,61 @@
 
             <ul class="nav-links" id="navLinks">
 
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#menu">Menu</a>
+                </li>
+
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
 
                 <li class="mobile-visit">
-                    <a href="#visit" class="button button-dark">
+
+                    <a href="#visit"
+                       class="button button-dark">
+
                         Visit Us
+
                         <svg aria-hidden="true">
                             <use href="#icon-arrow"></use>
                         </svg>
+
                     </a>
+
                 </li>
 
             </ul>
 
-            <a href="#visit" class="button button-dark nav-cta">
+            <a href="#visit"
+               class="button button-dark nav-cta">
+
                 Visit Us
+
                 <svg aria-hidden="true">
                     <use href="#icon-arrow"></use>
                 </svg>
+
             </a>
 
         </nav>
 
     </header>
 
+
     <main id="main-content">
+
 
         <!-- =====================================
              HERO SECTION
@@ -2767,10 +3945,13 @@
 
             </div>
 
-            <div class="hero-sun" aria-hidden="true">
+            <div class="hero-sun"
+                 aria-hidden="true">
+
                 <svg viewBox="0 0 100 100">
                     <use href="#icon-sun"></use>
                 </svg>
+
             </div>
 
             <div class="hero-content">
@@ -2778,27 +3959,39 @@
                 <div class="hero-content-inner">
 
                     <span class="eyebrow hero-enter">
+
                         Specialty Coffee · San Antonio, TX
+
                     </span>
 
                     <h1 class="hero-enter hero-enter-delay-1">
+
                         Good Mornings
+
                         <em>Start Here.</em>
+
                     </h1>
 
                     <p class="hero-description hero-enter hero-enter-delay-2">
+
                         Discover your new favorite coffee spot.
-                        Thoughtfully crafted coffee, welcoming spaces,
-                        and little moments worth waking up for.
+                        Thoughtfully crafted coffee, welcoming
+                        spaces, and little moments worth waking
+                        up for.
+
                     </p>
 
                     <div class="button-group hero-enter hero-enter-delay-3">
 
-                        <a href="#menu" class="button button-primary">
+                        <a href="#menu"
+                           class="button button-primary">
+
                             Explore Our Menu
+
                             <svg aria-hidden="true">
                                 <use href="#icon-arrow"></use>
                             </svg>
+
                         </a>
 
                         <a href="https://www.google.com/maps/place/Early+Bird+Coffee/@29.5499848,-98.5834896,882m/data=!3m5!1s0x865c67d77313b287:0xdc15fc8c6f4b75fa!8m2!3d29.5499848!4d-98.5809147!16s%2Fg%2F11qndynqc8"
@@ -2820,9 +4013,15 @@
 
             </div>
 
-            <a href="#about" class="scroll-indicator">
-                <span class="scroll-line" aria-hidden="true"></span>
+            <a href="#about"
+               class="scroll-indicator">
+
+                <span class="scroll-line"
+                      aria-hidden="true">
+                </span>
+
                 Discover Early Bird
+
             </a>
 
             <div class="hero-location">
@@ -2832,30 +4031,39 @@
                 </svg>
 
                 <span>
-                    Huebner Oaks Shopping Center
+
+                    Your Neighborhood Coffee Spot
+
                     <br>
+
                     San Antonio, Texas
+
                 </span>
 
             </div>
 
         </section>
 
-        <!-- BRAND STRIP -->
+
+        <!-- =====================================
+             BRAND STRIP
+        ====================================== -->
 
         <div class="brand-strip">
 
             <div class="brand-strip-inner">
 
                 <span>Good coffee.</span>
-                <span class="strip-star" aria-hidden="true">✳</span>
+
+                <span aria-hidden="true">✳</span>
 
                 <span>Better mornings.</span>
-                <span class="strip-star" aria-hidden="true">✳</span>
+
+                <span aria-hidden="true">✳</span>
 
                 <span>Little joys.</span>
 
-                <span class="strip-star desktop-strip"
+                <span class="desktop-strip"
                       aria-hidden="true">✳</span>
 
                 <span class="desktop-strip">
@@ -2865,6 +4073,7 @@
             </div>
 
         </div>
+
 
         <!-- =====================================
              ABOUT SECTION
@@ -2880,14 +4089,15 @@
 
                         <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=1100&q=85"
                              alt="Illustrative photograph of freshly prepared coffee"
-                             class="moving-image"
                              loading="lazy"
                              decoding="async">
 
                     </div>
 
                     <div class="about-caption">
+
                         A little good in every day.
+
                     </div>
 
                 </div>
@@ -2895,40 +4105,52 @@
                 <div class="about-content reveal-right">
 
                     <span class="eyebrow">
+
                         Your Neighborhood Coffee Spot
+
                     </span>
 
                     <h2>
+
                         More Than Coffee.
+
                         <em>A Better Start.</em>
+
                     </h2>
 
                     <p class="section-copy">
-                        Life moves fast. We believe there's always
-                        room to slow down, enjoy something delicious,
+
+                        Life moves fast. There's always room to
+                        slow down, enjoy something delicious,
                         and make a little time for yourself.
+
                     </p>
 
                     <p>
-                        At Early Bird Coffee in San Antonio, you'll
-                        discover specialty coffee, espresso, creative
-                        beverages, and pastries in the heart of
-                        Huebner Oaks. Whether you're stopping by
-                        before work or catching up with someone
-                        special, there's a reason to make us part
-                        of your day.
+
+                        Discover Early Bird Coffee in San Antonio.
+                        Whether you're stopping by before work,
+                        meeting a friend, or enjoying a moment
+                        to yourself, make your coffee break
+                        something to look forward to.
+
                     </p>
 
-                    <a href="#visit" class="text-link">
+                    <a href="#visit"
+                       class="text-link">
+
                         Come Find Us
 
                         <svg aria-hidden="true">
                             <use href="#icon-arrow"></use>
                         </svg>
+
                     </a>
 
                     <div class="about-signature">
+
                         Made for your everyday moments.
+
                     </div>
 
                 </div>
@@ -2936,6 +4158,7 @@
             </div>
 
         </section>
+
 
         <!-- =====================================
              MENU SECTION
@@ -2950,13 +4173,19 @@
                     <div class="reveal">
 
                         <span class="eyebrow">
+
                             Find Your Favorite
+
                         </span>
 
                         <h2>
+
                             Something Good
+
                             <br>
+
                             <em>Is Brewing.</em>
+
                         </h2>
 
                     </div>
@@ -2964,9 +4193,11 @@
                     <div class="section-heading-copy reveal">
 
                         <p>
-                            From the first comforting sip to a little
-                            afternoon treat, explore the flavors that
-                            make a coffee break worth taking.
+
+                            From the first comforting sip to a
+                            little afternoon treat, discover
+                            inspiration for your next coffee break.
+
                         </p>
 
                     </div>
@@ -2975,15 +4206,13 @@
 
                 <div class="menu-grid">
 
-                    <!-- MENU CATEGORY 01 -->
-
                     <article class="menu-card reveal"
-                             style="--delay: 0ms">
+                             style="--delay:0ms">
 
                         <div class="image-frame menu-image">
 
                             <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=800&q=82"
-                                 alt="Illustrative photograph of a cup of espresso coffee"
+                                 alt="Illustrative photograph of espresso coffee"
                                  loading="lazy"
                                  decoding="async">
 
@@ -2996,18 +4225,19 @@
                             <h3>Espresso & Coffee</h3>
 
                             <p>
-                                Rich, comforting coffee for the
+
+                                Rich, comforting coffee for
                                 mornings you want to start right.
+
                             </p>
 
                         </div>
 
                     </article>
 
-                    <!-- MENU CATEGORY 02 -->
 
                     <article class="menu-card reveal"
-                             style="--delay: 100ms">
+                             style="--delay:100ms">
 
                         <div class="image-frame menu-image">
 
@@ -3025,18 +4255,20 @@
                             <h3>Iced Coffee</h3>
 
                             <p>
-                                Refreshing coffee favorites for sunny
-                                Texas mornings and afternoon breaks.
+
+                                Refreshing coffee inspiration
+                                for sunny Texas mornings and
+                                afternoon breaks.
+
                             </p>
 
                         </div>
 
                     </article>
 
-                    <!-- MENU CATEGORY 03 -->
 
                     <article class="menu-card reveal"
-                             style="--delay: 200ms">
+                             style="--delay:200ms">
 
                         <div class="image-frame menu-image">
 
@@ -3054,24 +4286,25 @@
                             <h3>Matcha & More</h3>
 
                             <p>
-                                Explore matcha and other delicious
-                                alternatives when you're in the mood
-                                for something different.
+
+                                A little inspiration for when
+                                you're in the mood for
+                                something different.
+
                             </p>
 
                         </div>
 
                     </article>
 
-                    <!-- MENU CATEGORY 04 -->
 
                     <article class="menu-card reveal"
-                             style="--delay: 300ms">
+                             style="--delay:300ms">
 
                         <div class="image-frame menu-image">
 
                             <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=800&q=82"
-                                 alt="Illustrative photograph of baked pastries"
+                                 alt="Illustrative photograph of pastries"
                                  loading="lazy"
                                  decoding="async">
 
@@ -3084,8 +4317,10 @@
                             <h3>Pastries & Bites</h3>
 
                             <p>
-                                A little something delicious to
-                                enjoy alongside your favorite drink.
+
+                                A little something delicious
+                                to pair with your favorite drink.
+
                             </p>
 
                         </div>
@@ -3097,18 +4332,19 @@
                 <div class="menu-bottom reveal">
 
                     <p>
-                        Menu selections and availability may vary.
-                        Explore the current menu before visiting.
+
+                        Ask us about current menu selections
+                        and product availability.
+
                     </p>
 
                     <div class="button-group">
 
-                        <a href="https://coffeewithearlybird.com/pages/menu"
-                           target="_blank"
-                           rel="noopener noreferrer"
+                        <a href="#contact"
+                           data-inquiry="Menu Inquiry"
                            class="button button-dark">
 
-                            View Full Menu
+                            Ask About Our Menu
 
                             <svg aria-hidden="true">
                                 <use href="#icon-arrow"></use>
@@ -3116,11 +4352,10 @@
 
                         </a>
 
-                        <a href="#contact"
-                           data-inquiry="Menu Inquiry"
+                        <a href="#visit"
                            class="button button-outline-dark">
 
-                            Ask About Our Menu
+                            Visit Our Coffee Shop
 
                         </a>
 
@@ -3129,16 +4364,20 @@
                 </div>
 
                 <p class="photo-disclosure">
-                    Product photographs are illustrative.
-                    Actual offerings and presentation may vary.
+
+                    Product photographs and categories are
+                    illustrative. Confirm current offerings
+                    with the coffee shop.
+
                 </p>
 
             </div>
 
         </section>
 
+
         <!-- =====================================
-             IMMERSIVE PARALLAX FEATURE
+             CINEMATIC PARALLAX FEATURE
         ====================================== -->
 
         <section class="parallax-feature"
@@ -3166,21 +4405,30 @@
                 </svg>
 
                 <span class="eyebrow">
+
                     A Moment For Yourself
+
                 </span>
 
                 <h2 id="feature-heading">
+
                     Slow Down.
+
                     <em>Sip Something Good.</em>
+
                 </h2>
 
                 <p>
-                    The best moments don't always need a big
-                    occasion. Sometimes, all you need is good
-                    coffee and a little time to enjoy it.
+
+                    The best moments don't always need a
+                    big occasion. Sometimes, all you need
+                    is good coffee and a little time
+                    to enjoy it.
+
                 </p>
 
-                <a href="#visit" class="button button-primary">
+                <a href="#visit"
+                   class="button button-primary">
 
                     Make Time for Coffee
 
@@ -3194,8 +4442,9 @@
 
         </section>
 
+
         <!-- =====================================
-             THE EARLY BIRD EXPERIENCE
+             EARLY BIRD EXPERIENCE
         ====================================== -->
 
         <section class="section experience"
@@ -3206,19 +4455,26 @@
                 <div class="experience-heading reveal">
 
                     <span class="eyebrow">
+
                         The Early Bird Experience
+
                     </span>
 
                     <h2>
+
                         Small Moments.
+
                         <em>Big Feelings.</em>
+
                     </h2>
 
                     <p>
+
                         Make your coffee break a little more
-                        meaningful. Discover a place for good
-                        conversations, familiar favorites,
+                        meaningful. Discover a moment for
+                        good conversations, familiar favorites,
                         and something new to sip.
+
                     </p>
 
                 </div>
@@ -3226,7 +4482,7 @@
                 <div class="experience-grid">
 
                     <article class="experience-item reveal"
-                             style="--delay: 0ms">
+                             style="--delay:0ms">
 
                         <div class="experience-icon">
 
@@ -3242,15 +4498,17 @@
                         <h3>Good Coffee</h3>
 
                         <p>
-                            Specialty coffee and espresso for
-                            everyday routines, new discoveries,
-                            and everything in between.
+
+                            Coffee for everyday routines,
+                            new discoveries, and everything
+                            in between.
+
                         </p>
 
                     </article>
 
                     <article class="experience-item reveal"
-                             style="--delay: 120ms">
+                             style="--delay:120ms">
 
                         <div class="experience-icon">
 
@@ -3266,15 +4524,17 @@
                         <h3>Good Company</h3>
 
                         <p>
-                            Take a break, meet a friend, or simply
-                            enjoy a little quiet time with your
-                            favorite cup.
+
+                            Take a break, meet a friend,
+                            or simply enjoy a little quiet
+                            time with your favorite cup.
+
                         </p>
 
                     </article>
 
                     <article class="experience-item reveal"
-                             style="--delay: 240ms">
+                             style="--delay:240ms">
 
                         <div class="experience-icon">
 
@@ -3290,9 +4550,11 @@
                         <h3>Better Mornings</h3>
 
                         <p>
-                            Start with something you look forward
-                            to. A small ritual that makes the
-                            everyday feel a little brighter.
+
+                            Start with something you
+                            look forward to. A small ritual
+                            that makes every day brighter.
+
                         </p>
 
                     </article>
@@ -3303,107 +4565,210 @@
 
         </section>
 
+
         <!-- =====================================
-             IMAGE GALLERY
+             UPDATED MAGNETIC GALLERY
+
+             Always visible photographs.
+             Independent parallax animation.
+             No reveal-mask classes.
         ====================================== -->
 
         <section class="section gallery" id="gallery">
+
+            <div class="gallery-decoration"
+                 aria-hidden="true">
+
+                <svg viewBox="0 0 100 100">
+
+                    <use href="#icon-sun"></use>
+
+                </svg>
+
+            </div>
 
             <div class="container">
 
                 <div class="section-heading">
 
-                    <div class="reveal">
+                    <div class="gallery-heading-content">
 
                         <span class="eyebrow">
+
                             A Closer Look
+
                         </span>
 
                         <h2>
+
                             Life Through
+
                             <br>
+
                             <em>Our Lens.</em>
+
                         </h2>
+
+                        <div class="gallery-index">
+
+                            The Early Bird Journal
+
+                        </div>
 
                     </div>
 
-                    <div class="section-heading-copy reveal">
+                    <div class="section-heading-copy">
 
                         <p>
+
                             A glimpse into Early Bird Coffee.
-                            Discover the little details that
-                            make every coffee moment special.
+                            Discover the little details,
+                            everyday moments, and coffee
+                            experiences worth remembering.
+
                         </p>
 
                     </div>
 
                 </div>
 
-                <div class="gallery-grid">
 
-                    <figure class="gallery-item reveal-mask">
+                <div class="gallery-grid"
+                     id="magneticGalleryGrid">
 
-                        <button type="button"
-                                class="gallery-button"
-                                data-gallery-index="0"
-                                aria-label="Enlarge Early Bird Coffee gallery photograph one">
 
-                            <img src="eb1.png"
-                                 alt="Early Bird Coffee gallery photograph one"
-                                 loading="lazy"
-                                 decoding="async">
+                    <!-- MAGNETIC IMAGE ONE -->
 
-                            <span class="gallery-expand">
+                    <figure class="gallery-item">
 
-                                <svg aria-hidden="true">
-                                    <use href="#icon-expand"></use>
-                                </svg>
+                        <div class="magnetic-gallery-layer"
+                             data-gallery-direction="-1">
 
-                            </span>
+                            <button type="button"
+                                    class="gallery-button"
+                                    data-gallery-index="0"
+                                    aria-label="Enlarge Early Bird Coffee gallery photograph one">
 
-                        </button>
+                                <img src="eb1.png"
+                                     alt="Early Bird Coffee gallery photograph one"
+                                     loading="eager"
+                                     decoding="async">
 
-                        <figcaption class="gallery-meta">
-                            <span>Early Bird Coffee</span>
-                            <span>01 / 02</span>
-                        </figcaption>
+                                <span class="gallery-number">
+
+                                    01
+
+                                </span>
+
+                                <span class="gallery-expand">
+
+                                    <svg aria-hidden="true">
+
+                                        <use href="#icon-expand"></use>
+
+                                    </svg>
+
+                                </span>
+
+                            </button>
+
+                            <figcaption class="gallery-meta">
+
+                                <span>Early Bird Coffee</span>
+
+                                <span>01 / 02</span>
+
+                            </figcaption>
+
+                        </div>
+
+                    </figure>
+
+
+                    <!-- MAGNETIC IMAGE TWO -->
+
+                    <figure class="gallery-item">
+
+                        <div class="magnetic-gallery-layer"
+                             data-gallery-direction="1">
+
+                            <button type="button"
+                                    class="gallery-button"
+                                    data-gallery-index="1"
+                                    aria-label="Enlarge Early Bird Coffee gallery photograph two">
+
+                                <img src="eb2.jpg"
+                                     alt="Early Bird Coffee gallery photograph two"
+                                     loading="eager"
+                                     decoding="async">
+
+                                <span class="gallery-number">
+
+                                    02
+
+                                </span>
+
+                                <span class="gallery-expand">
+
+                                    <svg aria-hidden="true">
+
+                                        <use href="#icon-expand"></use>
+
+                                    </svg>
+
+                                </span>
+
+                            </button>
+
+                            <figcaption class="gallery-meta">
+
+                                <span>San Antonio, Texas</span>
+
+                                <span>02 / 02</span>
+
+                            </figcaption>
+
+                        </div>
 
                     </figure>
 
-                    <figure class="gallery-item reveal-mask">
+                </div>
 
-                        <button type="button"
-                                class="gallery-button"
-                                data-gallery-index="1"
-                                aria-label="Enlarge Early Bird Coffee gallery photograph two">
 
-                            <img src="eb2.jpg"
-                                 alt="Early Bird Coffee gallery photograph two"
-                                 loading="lazy"
-                                 decoding="async">
+                <div class="gallery-bottom">
 
-                            <span class="gallery-expand">
+                    <div class="magnetic-gallery-progress"
+                         aria-hidden="true">
 
-                                <svg aria-hidden="true">
-                                    <use href="#icon-expand"></use>
-                                </svg>
+                        <span id="galleryProgress"></span>
 
-                            </span>
+                    </div>
 
-                        </button>
+                    <div class="magnetic-gallery-label">
 
-                        <figcaption class="gallery-meta">
-                            <span>San Antonio, Texas</span>
-                            <span>02 / 02</span>
-                        </figcaption>
+                        Little moments worth remembering
 
-                    </figure>
+                    </div>
+
+                    <a href="#visit"
+                       class="text-link">
+
+                        Experience Early Bird Coffee
+
+                        <svg aria-hidden="true">
+
+                            <use href="#icon-arrow"></use>
+
+                        </svg>
+
+                    </a>
 
                 </div>
 
             </div>
 
         </section>
+
 
         <!-- =====================================
              COMMUNITY SECTION
@@ -3417,28 +4782,40 @@
                 <div class="community-inner reveal-scale">
 
                     <div class="community-mark"
-                         aria-hidden="true">✳</div>
+                         aria-hidden="true">
+
+                        ✳
+
+                    </div>
 
                     <span class="eyebrow">
+
                         Coffee Brings Us Together
+
                     </span>
 
                     <h2>
+
                         Your Morning.
+
                         Your Community.
+
                         <em>Your Early Bird.</em>
+
                     </h2>
 
                     <p>
+
                         Every cup is an opportunity to reconnect
-                        with the people, places, and little moments
-                        that make life good. Come discover Early Bird
-                        Coffee for yourself.
+                        with the people, places, and little
+                        moments that make life good. Come
+                        discover Early Bird Coffee for yourself.
+
                     </p>
 
                     <div class="community-links">
 
-                        <a href="https://www.google.com/maps/search/?api=1&query=Early+Bird+Coffee+11745+I-10+San+Antonio+TX"
+                        <a href="https://www.google.com/maps/place/Early+Bird+Coffee/@29.5499848,-98.5834896,882m/data=!3m5!1s0x865c67d77313b287:0xdc15fc8c6f4b75fa!8m2!3d29.5499848!4d-98.5809147!16s%2Fg%2F11qndynqc8"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="text-link">
@@ -3446,20 +4823,22 @@
                             Read Google Reviews
 
                             <svg aria-hidden="true">
+
                                 <use href="#icon-arrow"></use>
+
                             </svg>
 
                         </a>
 
-                        <a href="https://www.instagram.com/earlybirdcoffee.sa/"
-                           target="_blank"
-                           rel="noopener noreferrer"
+                        <a href="#contact"
                            class="text-link">
 
-                            Follow Our Instagram
+                            Connect With Us
 
                             <svg aria-hidden="true">
+
                                 <use href="#icon-arrow"></use>
+
                             </svg>
 
                         </a>
@@ -3472,8 +4851,9 @@
 
         </section>
 
+
         <!-- =====================================
-             LOCATION AND BUSINESS HOURS
+             VISIT OUR COFFEE SHOP
         ====================================== -->
 
         <section class="section visit" id="visit">
@@ -3483,20 +4863,27 @@
                 <div class="visit-content reveal-left">
 
                     <span class="eyebrow">
+
                         Come Say Hello
+
                     </span>
 
                     <h2>
+
                         Your Next Cup
+
                         <br>
+
                         <em>Is Waiting.</em>
+
                     </h2>
 
                     <p class="visit-intro">
-                        Find Early Bird Coffee at Huebner Oaks
-                        Shopping Center in San Antonio. Stop in
-                        for a morning pick-me-up or take a little
-                        break from your day.
+
+                        Find Early Bird Coffee in San Antonio,
+                        Texas. Stop in for a morning pick-me-up
+                        or take a little break from your day.
+
                     </p>
 
                     <div class="visit-information">
@@ -3504,7 +4891,9 @@
                         <div class="info-row">
 
                             <svg aria-hidden="true">
+
                                 <use href="#icon-pin"></use>
+
                             </svg>
 
                             <div>
@@ -3512,12 +4901,22 @@
                                 <h3>Our Location</h3>
 
                                 <p>
-                                    Huebner Oaks Shopping Center
+
+                                    Early Bird Coffee
+
                                     <br>
-                                    11745 I-10, Suite 527
-                                    <br>
-                                    San Antonio, TX 78230
+
+                                    San Antonio, Texas
+
                                 </p>
+
+                                <a href="https://www.google.com/maps/place/Early+Bird+Coffee/@29.5499848,-98.5834896,882m/data=!3m5!1s0x865c67d77313b287:0xdc15fc8c6f4b75fa!8m2!3d29.5499848!4d-98.5809147!16s%2Fg%2F11qndynqc8"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    View exact address
+
+                                </a>
 
                             </div>
 
@@ -3526,46 +4925,30 @@
                         <div class="info-row">
 
                             <svg aria-hidden="true">
+
                                 <use href="#icon-clock"></use>
+
                             </svg>
 
                             <div>
 
-                                <h3>Regular Opening Hours</h3>
+                                <h3>Opening Hours</h3>
 
-                                <ul class="hours-list">
+                                <p>
 
-                                    <li>
-                                        <span>Monday – Friday</span>
-                                        <span>6:30 AM – 6 PM</span>
-                                    </li>
-
-                                    <li>
-                                        <span>Saturday</span>
-                                        <span>8 AM – 6 PM</span>
-                                    </li>
-
-                                    <li>
-                                        <span>Sunday</span>
-                                        <span>8 AM – 2 PM</span>
-                                    </li>
-
-                                </ul>
-
-                                <p class="hours-note">
-
-                                    Holiday hours and temporary
-                                    closures may vary.
-
-                                    <a href="https://coffeewithearlybird.com/"
-                                       target="_blank"
-                                       rel="noopener noreferrer">
-
-                                        Check current hours.
-
-                                    </a>
+                                    Check the latest business
+                                    hours before planning
+                                    your visit.
 
                                 </p>
+
+                                <a href="https://www.google.com/maps/place/Early+Bird+Coffee/@29.5499848,-98.5834896,882m/data=!3m5!1s0x865c67d77313b287:0xdc15fc8c6f4b75fa!8m2!3d29.5499848!4d-98.5809147!16s%2Fg%2F11qndynqc8"
+                                   target="_blank"
+                                   rel="noopener noreferrer">
+
+                                    Check current opening hours
+
+                                </a>
 
                             </div>
 
@@ -3574,15 +4957,28 @@
                         <div class="info-row">
 
                             <svg aria-hidden="true">
-                                <use href="#icon-phone"></use>
+
+                                <use href="#icon-mail"></use>
+
                             </svg>
 
                             <div>
 
-                                <h3>Give Us a Call</h3>
+                                <h3>Have a Question?</h3>
 
-                                <a href="tel:+12108577769">
-                                    (210) 857-7769
+                                <p>
+
+                                    Ask about the menu,
+                                    availability, or your
+                                    upcoming visit.
+
+                                </p>
+
+                                <a href="#contact"
+                                   data-inquiry="General Inquiry">
+
+                                    Send an inquiry
+
                                 </a>
 
                             </div>
@@ -3601,7 +4997,9 @@
                             Get Directions
 
                             <svg aria-hidden="true">
+
                                 <use href="#icon-arrow"></use>
+
                             </svg>
 
                         </a>
@@ -3618,10 +5016,11 @@
 
                 </div>
 
+
                 <div class="map-container reveal-right">
 
                     <iframe
-                        src="https://maps.google.com/maps?q=Early%20Bird%20Coffee%2011745%20I-10%20Suite%20527%20San%20Antonio%20Texas&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                        src="https://maps.google.com/maps?q=29.5499848,-98.5809147&t=&z=16&ie=UTF8&iwloc=&output=embed"
                         title="Map showing Early Bird Coffee in San Antonio, Texas"
                         loading="lazy"
                         allowfullscreen
@@ -3630,10 +5029,16 @@
 
                     <div class="map-label">
 
-                        <strong>See you at Early Bird.</strong>
+                        <strong>
+
+                            See you at Early Bird.
+
+                        </strong>
 
                         <p>
-                            Huebner Oaks · San Antonio, TX
+
+                            San Antonio · Texas
+
                         </p>
 
                     </div>
@@ -3644,8 +5049,9 @@
 
         </section>
 
+
         <!-- =====================================
-             CONTACT FORM
+             CONTACT FORM SECTION
         ====================================== -->
 
         <section class="section contact" id="contact">
@@ -3655,68 +5061,96 @@
                 <div class="contact-copy reveal-left">
 
                     <span class="eyebrow">
+
                         Let's Connect
+
                     </span>
 
                     <h2>
+
                         Let's Brew
+
                         <em>Something Together.</em>
+
                     </h2>
 
                     <p>
-                        Have a question about our coffee, menu,
-                        or your next visit? We'd love to hear
-                        from you.
+
+                        Have a question about our coffee,
+                        menu, or your next visit? We'd
+                        love to hear from you.
+
                     </p>
 
                     <div class="contact-direct">
 
-                        <span>Prefer to give us a call?</span>
+                        <span>
 
-                        <a href="tel:+12108577769">
-                            (210) 857-7769
+                            Come experience Early Bird
+
+                        </span>
+
+                        <a href="#visit">
+
+                            San Antonio, Texas
+
                         </a>
 
                     </div>
 
-                    <a href="https://www.instagram.com/earlybirdcoffee.sa/"
+                    <a href="https://www.google.com/maps/place/Early+Bird+Coffee/@29.5499848,-98.5834896,882m/data=!3m5!1s0x865c67d77313b287:0xdc15fc8c6f4b75fa!8m2!3d29.5499848!4d-98.5809147!16s%2Fg%2F11qndynqc8"
                        class="text-link"
                        target="_blank"
                        rel="noopener noreferrer"
                        style="margin-top:25px">
 
-                        Find Us on Instagram
+                        Find Us on Google Maps
 
                         <svg aria-hidden="true">
+
                             <use href="#icon-arrow"></use>
+
                         </svg>
 
                     </a>
 
                 </div>
 
+
                 <div class="contact-form reveal-right">
 
                     <div class="form-heading">
 
-                        <h3>Send Us a Message</h3>
+                        <h3>
+
+                            Send Us a Message
+
+                        </h3>
 
                         <p>
+
                             Fill out the details below.
                             Fields marked with * are required.
+
                         </p>
 
                     </div>
 
-                    <form id="inquiryForm" method="post" novalidate>
+                    <form id="inquiryForm"
+                          method="post"
+                          novalidate>
 
                         <div class="form-grid">
+
 
                             <div class="form-field">
 
                                 <label for="fullName">
+
                                     Full Name
+
                                     <span class="required-mark">*</span>
+
                                 </label>
 
                                 <input type="text"
@@ -3734,11 +5168,15 @@
 
                             </div>
 
+
                             <div class="form-field">
 
                                 <label for="emailAddress">
+
                                     Email Address
+
                                     <span class="required-mark">*</span>
+
                                 </label>
 
                                 <input type="email"
@@ -3756,6 +5194,7 @@
 
                             </div>
 
+
                             <div class="form-field">
 
                                 <label for="phoneNumber">
@@ -3763,7 +5202,9 @@
                                     Phone Number
 
                                     <span class="optional-mark">
+
                                         (Optional)
+
                                     </span>
 
                                 </label>
@@ -3782,6 +5223,7 @@
 
                             </div>
 
+
                             <div class="form-field">
 
                                 <label for="inquiryType">
@@ -3798,23 +5240,33 @@
                                         required>
 
                                     <option value="">
+
                                         Select an inquiry
+
                                     </option>
 
                                     <option value="General Inquiry">
+
                                         General Inquiry
+
                                     </option>
 
                                     <option value="Menu Inquiry">
+
                                         Menu Inquiry
+
                                     </option>
 
                                     <option value="Visiting the Coffee Shop">
+
                                         Visiting the Coffee Shop
+
                                     </option>
 
                                     <option value="Other">
+
                                         Other
+
                                     </option>
 
                                 </select>
@@ -3824,6 +5276,7 @@
                                 </span>
 
                             </div>
+
 
                             <div class="form-field full-width">
 
@@ -3850,12 +5303,16 @@
 
                         </div>
 
-                        <!-- SPAM HONEYPOT -->
 
-                        <div class="honeypot" aria-hidden="true">
+                        <!-- SPAM PROTECTION -->
+
+                        <div class="honeypot"
+                             aria-hidden="true">
 
                             <label for="websiteField">
+
                                 Leave this field empty
+
                             </label>
 
                             <input type="text"
@@ -3865,6 +5322,7 @@
                                    autocomplete="off">
 
                         </div>
+
 
                         <!-- CONSENT -->
 
@@ -3879,9 +5337,10 @@
 
                             <label for="consent">
 
-                                I agree to be contacted by Early Bird
-                                Coffee regarding my inquiry using
-                                the information I have provided.
+                                I agree to be contacted by
+                                Early Bird Coffee regarding my
+                                inquiry using the information
+                                I have provided.
 
                             </label>
 
@@ -3891,16 +5350,23 @@
                               class="field-error">
                         </span>
 
+
+                        <!-- SUBMIT BUTTON -->
+
                         <button type="submit"
                                 class="button button-dark submit-button"
                                 id="submitButton">
 
                             <span id="submitButtonText">
+
                                 Send Your Message
+
                             </span>
 
                             <svg aria-hidden="true">
+
                                 <use href="#icon-arrow"></use>
+
                             </svg>
 
                         </button>
@@ -3913,19 +5379,23 @@
                         </div>
 
                         <p class="form-footnote">
+
                             Your inquiry is not a subscription
                             to marketing messages.
+
                         </p>
 
                         <noscript>
-                            <p style="margin-top:15px;color:#9d392e">
-                                This form requires JavaScript.
-                                Please call
-                                <a href="tel:+12108577769">
-                                    (210) 857-7769
-                                </a>
-                                to contact Early Bird Coffee.
+
+                            <p style="margin-top:15px">
+
+                                JavaScript is required for
+                                this inquiry form. Please
+                                visit our Google Maps listing
+                                for contact information.
+
                             </p>
+
                         </noscript>
 
                     </form>
@@ -3935,6 +5405,7 @@
             </div>
 
         </section>
+
 
         <!-- =====================================
              FINAL CALL TO ACTION
@@ -3955,18 +5426,25 @@
                 <div class="reveal-left">
 
                     <span class="eyebrow">
+
                         See You Soon
+
                     </span>
 
                     <h2>
+
                         Make Tomorrow Morning
+
                         <em>a Little Better.</em>
+
                     </h2>
 
                     <p>
+
                         Good coffee, a welcoming atmosphere,
                         and a moment that's all yours.
                         Come experience Early Bird Coffee.
+
                     </p>
 
                 </div>
@@ -3981,7 +5459,9 @@
                         Get Directions
 
                         <svg aria-hidden="true">
+
                             <use href="#icon-arrow"></use>
+
                         </svg>
 
                     </a>
@@ -4000,7 +5480,9 @@
 
         </section>
 
+
     </main>
+
 
     <!-- =========================================
          FOOTER
@@ -4027,12 +5509,15 @@
                     </a>
 
                     <p class="footer-description">
+
                         Specialty coffee and little moments
-                        worth waking up for. Find us in the
-                        heart of Huebner Oaks, San Antonio.
+                        worth waking up for. Discover Early
+                        Bird Coffee in San Antonio, Texas.
+
                     </p>
 
                 </div>
+
 
                 <div class="footer-column">
 
@@ -4041,15 +5526,21 @@
                     <ul class="footer-links">
 
                         <li><a href="#home">Home</a></li>
+
                         <li><a href="#about">About Us</a></li>
+
                         <li><a href="#menu">Our Menu</a></li>
+
                         <li><a href="#gallery">Gallery</a></li>
+
                         <li><a href="#visit">Visit Us</a></li>
+
                         <li><a href="#contact">Contact</a></li>
 
                     </ul>
 
                 </div>
+
 
                 <div class="footer-column">
 
@@ -4063,9 +5554,11 @@
                                target="_blank"
                                rel="noopener noreferrer">
 
-                                11745 I-10, Suite 527
+                                Early Bird Coffee
+
                                 <br>
-                                San Antonio, TX 78230
+
+                                San Antonio, Texas
 
                             </a>
 
@@ -4073,19 +5566,9 @@
 
                         <li>
 
-                            <a href="tel:+12108577769">
-                                (210) 857-7769
-                            </a>
+                            <a href="#visit">
 
-                        </li>
-
-                        <li>
-
-                            <a href="https://coffeewithearlybird.com/"
-                               target="_blank"
-                               rel="noopener noreferrer">
-
-                                Official Website
+                                Location & Hours
 
                             </a>
 
@@ -4094,7 +5577,9 @@
                         <li>
 
                             <a href="#contact">
+
                                 Send an Inquiry
+
                             </a>
 
                         </li>
@@ -4103,30 +5588,23 @@
 
                 </div>
 
+
                 <div class="footer-column">
 
                     <h3>Stay Connected</h3>
 
                     <div class="footer-socials">
 
-                        <a href="https://www.instagram.com/earlybirdcoffee.sa/"
+                        <a href="https://www.google.com/maps/place/Early+Bird+Coffee/@29.5499848,-98.5834896,882m/data=!3m5!1s0x865c67d77313b287:0xdc15fc8c6f4b75fa!8m2!3d29.5499848!4d-98.5809147!16s%2Fg%2F11qndynqc8"
                            target="_blank"
                            rel="noopener noreferrer"
                            class="social-icon"
-                           aria-label="Early Bird Coffee on Instagram">
+                           aria-label="Find Early Bird Coffee">
 
                             <svg aria-hidden="true">
-                                <use href="#icon-instagram"></use>
-                            </svg>
 
-                        </a>
+                                <use href="#icon-pin"></use>
 
-                        <a href="tel:+12108577769"
-                           class="social-icon"
-                           aria-label="Call Early Bird Coffee">
-
-                            <svg aria-hidden="true">
-                                <use href="#icon-phone"></use>
                             </svg>
 
                         </a>
@@ -4136,7 +5614,9 @@
                            aria-label="Contact Early Bird Coffee">
 
                             <svg aria-hidden="true">
+
                                 <use href="#icon-mail"></use>
+
                             </svg>
 
                         </a>
@@ -4147,19 +5627,28 @@
 
             </div>
 
+
             <div class="footer-bottom">
 
                 <p>
-                    &copy; <span id="currentYear">2026</span>
+
+                    &copy;
+
+                    <span id="currentYear">2026</span>
+
                     Early Bird Coffee. All rights reserved.
+
                 </p>
 
-                <a href="#top" class="back-to-top">
+                <a href="#top"
+                   class="back-to-top">
 
                     Back to Top
 
                     <svg aria-hidden="true">
+
                         <use href="#icon-up"></use>
+
                     </svg>
 
                 </a>
@@ -4169,6 +5658,7 @@
         </div>
 
     </footer>
+
 
     <!-- =========================================
          MOBILE STICKY CTA
@@ -4183,7 +5673,9 @@
            class="button button-dark">
 
             <svg aria-hidden="true">
+
                 <use href="#icon-pin"></use>
+
             </svg>
 
             Get Directions
@@ -4195,7 +5687,9 @@
            class="button button-outline-dark">
 
             <svg aria-hidden="true">
+
                 <use href="#icon-mail"></use>
+
             </svg>
 
             Contact Us
@@ -4203,6 +5697,7 @@
         </a>
 
     </div>
+
 
     <!-- =========================================
          GALLERY LIGHTBOX
@@ -4221,10 +5716,13 @@
                 aria-label="Close image gallery">
 
             <svg aria-hidden="true">
+
                 <use href="#icon-close"></use>
+
             </svg>
 
         </button>
+
 
         <button type="button"
                 class="lightbox-control lightbox-prev"
@@ -4232,15 +5730,19 @@
                 aria-label="Previous image">
 
             <svg aria-hidden="true">
+
                 <use href="#icon-left"></use>
+
             </svg>
 
         </button>
+
 
         <img src="eb1.png"
              alt="Early Bird Coffee gallery photograph"
              class="lightbox-image"
              id="lightboxImage">
+
 
         <button type="button"
                 class="lightbox-control lightbox-next"
@@ -4248,10 +5750,13 @@
                 aria-label="Next image">
 
             <svg aria-hidden="true">
+
                 <use href="#icon-right"></use>
+
             </svg>
 
         </button>
+
 
         <div class="lightbox-caption"
              id="lightboxCaption"
@@ -4260,8 +5765,11 @@
 
     </div>
 
+
     <script>
+
         "use strict";
+
 
         /* =========================================
            01. GENERAL CONFIGURATION
@@ -4275,9 +5783,17 @@
             "(max-width: 767px)"
         );
 
-        const siteHeader = document.getElementById("siteHeader");
-        const menuToggle = document.getElementById("menuToggle");
-        const navLinks = document.getElementById("navLinks");
+        const siteHeader = document.getElementById(
+            "siteHeader"
+        );
+
+        const menuToggle = document.getElementById(
+            "menuToggle"
+        );
+
+        const navLinks = document.getElementById(
+            "navLinks"
+        );
 
         document.getElementById("currentYear").textContent =
             new Date().getFullYear();
@@ -4290,9 +5806,14 @@
         function openMenu() {
 
             navLinks.classList.add("open");
+
             document.body.classList.add("menu-open");
 
-            menuToggle.setAttribute("aria-expanded", "true");
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "true"
+            );
+
             menuToggle.setAttribute(
                 "aria-label",
                 "Close navigation menu"
@@ -4303,16 +5824,23 @@
         function closeMenu(restoreFocus = false) {
 
             navLinks.classList.remove("open");
+
             document.body.classList.remove("menu-open");
 
-            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute(
+                "aria-expanded",
+                "false"
+            );
+
             menuToggle.setAttribute(
                 "aria-label",
                 "Open navigation menu"
             );
 
             if (restoreFocus) {
+
                 menuToggle.focus();
+
             }
 
         }
@@ -4320,23 +5848,31 @@
         menuToggle.addEventListener("click", function () {
 
             const isOpen =
+
                 menuToggle.getAttribute("aria-expanded") === "true";
 
             if (isOpen) {
+
                 closeMenu();
+
             } else {
+
                 openMenu();
+
             }
 
         });
 
-        navLinks.querySelectorAll("a").forEach(function (link) {
+        navLinks.querySelectorAll("a")
+            .forEach(function (link) {
 
-            link.addEventListener("click", function () {
-                closeMenu();
+                link.addEventListener("click", function () {
+
+                    closeMenu();
+
+                });
+
             });
-
-        });
 
         document.addEventListener("keydown", function (event) {
 
@@ -4344,7 +5880,9 @@
                 event.key === "Escape" &&
                 navLinks.classList.contains("open")
             ) {
+
                 closeMenu(true);
+
             }
 
         });
@@ -4352,7 +5890,9 @@
         mobileViewport.addEventListener("change", function (event) {
 
             if (!event.matches) {
+
                 closeMenu();
+
             }
 
             requestScrollUpdate();
@@ -4362,12 +5902,23 @@
 
         /* =========================================
            03. SCROLL REVEAL ANIMATIONS
+
+           The magnetic gallery is intentionally
+           excluded to prevent blank images.
         ========================================= */
 
-        const revealElements = document.querySelectorAll(
-            ".reveal, .reveal-left, .reveal-right, " +
-            ".reveal-scale, .reveal-mask"
-        );
+        const revealElements = Array.from(
+
+            document.querySelectorAll(
+                ".reveal, .reveal-left, " +
+                ".reveal-right, .reveal-scale"
+            )
+
+        ).filter(function (element) {
+
+            return !element.closest("#gallery");
+
+        });
 
         if (
             "IntersectionObserver" in window &&
@@ -4375,6 +5926,7 @@
         ) {
 
             const revealObserver = new IntersectionObserver(
+
                 function (entries, observer) {
 
                     entries.forEach(function (entry) {
@@ -4385,21 +5937,30 @@
                                 "is-visible"
                             );
 
-                            observer.unobserve(entry.target);
+                            observer.unobserve(
+                                entry.target
+                            );
 
                         }
 
                     });
 
                 },
+
                 {
-                    threshold: 0.08,
-                    rootMargin: "0px 0px 20px 0px"
+
+                    threshold: 0.05,
+
+                    rootMargin: "0px 0px 40px 0px"
+
                 }
+
             );
 
             revealElements.forEach(function (element) {
+
                 revealObserver.observe(element);
+
             });
 
             document.documentElement.classList.add("js");
@@ -4407,7 +5968,9 @@
         } else {
 
             revealElements.forEach(function (element) {
+
                 element.classList.add("is-visible");
+
             });
 
         }
@@ -4417,7 +5980,9 @@
             if (event.matches) {
 
                 revealElements.forEach(function (element) {
+
                     element.classList.add("is-visible");
+
                 });
 
             }
@@ -4428,7 +5993,7 @@
 
 
         /* =========================================
-           04. PARALLAX AND SCROLL PROGRESS
+           04. GENERAL PARALLAX AND SCROLL PROGRESS
         ========================================= */
 
         const progressBar = document.getElementById(
@@ -4436,7 +6001,9 @@
         );
 
         const parallaxElements = Array.from(
+
             document.querySelectorAll("[data-parallax]")
+
         );
 
         let scrollFramePending = false;
@@ -4446,36 +6013,53 @@
             scrollFramePending = false;
 
             const scrollY =
+
                 window.scrollY ||
                 document.documentElement.scrollTop;
 
             const viewportHeight = window.innerHeight;
 
             const documentHeight =
+
                 document.documentElement.scrollHeight;
 
             const maxScroll = Math.max(
+
                 documentHeight - viewportHeight,
+
                 1
+
             );
 
             const progress = Math.min(
+
                 Math.max(scrollY / maxScroll, 0),
+
                 1
+
             );
 
             progressBar.style.transform =
+
                 "scaleX(" + progress + ")";
 
             siteHeader.classList.toggle(
+
                 "scrolled",
+
                 scrollY > 24
+
             );
 
-            if (reducedMotion.matches || mobileViewport.matches) {
+            if (
+                reducedMotion.matches ||
+                mobileViewport.matches
+            ) {
 
                 parallaxElements.forEach(function (element) {
+
                     element.style.transform = "none";
+
                 });
 
                 return;
@@ -4483,18 +6067,24 @@
             }
 
             const measurements = parallaxElements.map(
+
                 function (element) {
 
                     return {
+
                         element: element,
+
                         rect: element.parentElement
                             .getBoundingClientRect(),
+
                         speed: Number(
                             element.dataset.parallax
                         ) || 0.12
+
                     };
 
                 }
+
             );
 
             measurements.forEach(function (item) {
@@ -4505,28 +6095,38 @@
                     rect.bottom < -150 ||
                     rect.top > viewportHeight + 150
                 ) {
+
                     return;
+
                 }
 
                 const centerOffset =
+
                     rect.top +
                     rect.height / 2 -
                     viewportHeight / 2;
 
                 const maximumOffset =
+
                     rect.height * 0.1;
 
                 const offset = Math.max(
+
                     -maximumOffset,
+
                     Math.min(
                         maximumOffset,
                         -centerOffset * item.speed
                     )
+
                 );
 
                 item.element.style.transform =
+
                     "translate3d(0," +
+
                     offset.toFixed(2) +
+
                     "px,0) scale(1.025)";
 
             });
@@ -4540,7 +6140,9 @@
                 scrollFramePending = true;
 
                 window.requestAnimationFrame(
+
                     updateScrollEffects
+
                 );
 
             }
@@ -4548,130 +6150,595 @@
         }
 
         window.addEventListener(
+
             "scroll",
+
             requestScrollUpdate,
+
             { passive: true }
+
         );
 
         window.addEventListener(
+
             "resize",
+
             requestScrollUpdate,
+
             { passive: true }
+
         );
 
         window.addEventListener(
+
             "load",
+
             requestScrollUpdate
+
         );
 
         requestScrollUpdate();
 
 
         /* =========================================
-           05. ACTIVE NAVIGATION LINKS
+           05. NEW MAGNETIC GALLERY SCROLL ENGINE
+        ========================================= */
+
+        (function initializeMagneticGallery() {
+
+            const gallery = document.getElementById(
+                "gallery"
+            );
+
+            const progressFill = document.getElementById(
+                "galleryProgress"
+            );
+
+            if (!gallery) return;
+
+            const magneticLayers = Array.from(
+
+                gallery.querySelectorAll(
+                    ".magnetic-gallery-layer"
+                )
+
+            );
+
+            if (!magneticLayers.length) return;
+
+
+            /*
+                Each image has its own animation state.
+
+                Movement occurs on the wrapper, not
+                the figure or image visibility.
+            */
+
+            const animationStates = magneticLayers.map(
+
+                function (layer) {
+
+                    return {
+
+                        element: layer,
+
+                        direction: Number(
+                            layer.dataset.galleryDirection
+                        ) || 1,
+
+                        current: 0,
+
+                        target: 0
+
+                    };
+
+                }
+
+            );
+
+            let animationFrame = null;
+
+            let galleryVisible = false;
+
+            let currentProgress = 0;
+
+            let targetProgress = 0;
+
+
+            function clamp(value, minimum, maximum) {
+
+                return Math.min(
+
+                    Math.max(value, minimum),
+
+                    maximum
+
+                );
+
+            }
+
+
+            function resetMovement() {
+
+                animationStates.forEach(function (state) {
+
+                    state.current = 0;
+
+                    state.target = 0;
+
+                    state.element.style.transform =
+
+                        "translate3d(0,0,0)";
+
+                });
+
+            }
+
+
+            function calculateMovement() {
+
+                const rect = gallery.getBoundingClientRect();
+
+                const viewportHeight = window.innerHeight;
+
+                galleryVisible =
+
+                    rect.bottom > -100 &&
+
+                    rect.top < viewportHeight + 100;
+
+
+                /*
+                    Calculate the percentage of the gallery
+                    that has passed through the viewport.
+                */
+
+                targetProgress = clamp(
+
+                    (viewportHeight - rect.top) /
+
+                    (viewportHeight + rect.height),
+
+                    0,
+
+                    1
+
+                );
+
+
+                /*
+                    Mobile and reduced-motion visitors
+                    receive a stable, fully visible gallery.
+                */
+
+                if (
+                    mobileViewport.matches ||
+                    reducedMotion.matches
+                ) {
+
+                    resetMovement();
+
+                    currentProgress = targetProgress;
+
+                    if (progressFill) {
+
+                        progressFill.style.transform =
+
+                            "scaleX(" +
+
+                            targetProgress.toFixed(4) +
+
+                            ")";
+
+                    }
+
+                    return;
+
+                }
+
+
+                if (!galleryVisible) return;
+
+
+                /*
+                    Calculate opposite-direction movement
+                    relative to the viewport center.
+                */
+
+                const galleryCenter =
+
+                    rect.top + rect.height / 2;
+
+                const viewportCenter =
+
+                    viewportHeight / 2;
+
+                const distance =
+
+                    galleryCenter - viewportCenter;
+
+                const strength =
+
+                    window.innerWidth > 1024
+
+                    ? 0.085
+
+                    : 0.045;
+
+                const maximumMovement =
+
+                    window.innerWidth > 1024
+
+                    ? 48
+
+                    : 28;
+
+
+                animationStates.forEach(function (state) {
+
+                    state.target = clamp(
+
+                        distance *
+                        strength *
+                        state.direction,
+
+                        -maximumMovement,
+
+                        maximumMovement
+
+                    );
+
+                });
+
+            }
+
+
+            function animateGallery() {
+
+                animationFrame = null;
+
+                if (
+                    mobileViewport.matches ||
+                    reducedMotion.matches
+                ) {
+
+                    resetMovement();
+
+                    return;
+
+                }
+
+                let needsAnotherFrame = false;
+
+
+                /*
+                    Interpolation provides the smooth,
+                    magnetic trailing movement.
+                */
+
+                animationStates.forEach(function (state) {
+
+                    const difference =
+
+                        state.target - state.current;
+
+                    state.current +=
+
+                        difference * 0.075;
+
+                    if (Math.abs(difference) > 0.1) {
+
+                        needsAnotherFrame = true;
+
+                    } else {
+
+                        state.current = state.target;
+
+                    }
+
+                    state.element.style.transform =
+
+                        "translate3d(0," +
+
+                        state.current.toFixed(2) +
+
+                        "px,0)";
+
+                });
+
+
+                /*
+                    Animate the gallery progress bar.
+                */
+
+                const progressDifference =
+
+                    targetProgress - currentProgress;
+
+                currentProgress +=
+
+                    progressDifference * 0.09;
+
+                if (Math.abs(progressDifference) > 0.001) {
+
+                    needsAnotherFrame = true;
+
+                } else {
+
+                    currentProgress = targetProgress;
+
+                }
+
+                if (progressFill) {
+
+                    progressFill.style.transform =
+
+                        "scaleX(" +
+
+                        currentProgress.toFixed(4) +
+
+                        ")";
+
+                }
+
+
+                /*
+                    Stop the animation loop when it
+                    is outside the viewport or settled.
+                */
+
+                if (
+                    needsAnotherFrame &&
+                    galleryVisible
+                ) {
+
+                    animationFrame =
+
+                        window.requestAnimationFrame(
+                            animateGallery
+                        );
+
+                }
+
+            }
+
+
+            function updateGallery() {
+
+                calculateMovement();
+
+                if (
+                    animationFrame === null &&
+                    galleryVisible &&
+                    !mobileViewport.matches &&
+                    !reducedMotion.matches
+                ) {
+
+                    animationFrame =
+
+                        window.requestAnimationFrame(
+                            animateGallery
+                        );
+
+                }
+
+            }
+
+
+            window.addEventListener(
+
+                "scroll",
+
+                updateGallery,
+
+                { passive: true }
+
+            );
+
+            window.addEventListener(
+
+                "resize",
+
+                updateGallery,
+
+                { passive: true }
+
+            );
+
+            window.addEventListener(
+
+                "load",
+
+                updateGallery
+
+            );
+
+            mobileViewport.addEventListener(
+
+                "change",
+
+                updateGallery
+
+            );
+
+            reducedMotion.addEventListener(
+
+                "change",
+
+                updateGallery
+
+            );
+
+
+            /*
+                Recalculate the gallery position after
+                its photographs have loaded.
+            */
+
+            gallery.querySelectorAll("img")
+                .forEach(function (image) {
+
+                    image.addEventListener(
+
+                        "load",
+
+                        updateGallery
+
+                    );
+
+                });
+
+
+            updateGallery();
+
+        })();
+
+
+        /* =========================================
+           06. ACTIVE NAVIGATION LINKS
         ========================================= */
 
         const navigationAnchors = Array.from(
+
             navLinks.querySelectorAll('a[href^="#"]')
+
         );
 
         const navigationSections = navigationAnchors
+
             .map(function (link) {
 
                 return document.querySelector(
+
                     link.getAttribute("href")
+
                 );
 
             })
+
             .filter(Boolean);
 
         if ("IntersectionObserver" in window) {
 
             const sectionObserver = new IntersectionObserver(
+
                 function (entries) {
 
                     entries.forEach(function (entry) {
 
                         if (!entry.isIntersecting) {
+
                             return;
+
                         }
 
                         navigationAnchors.forEach(
+
                             function (link) {
 
                                 const active =
+
                                     link.getAttribute("href") ===
+
                                     "#" + entry.target.id;
 
                                 link.classList.toggle(
+
                                     "active",
+
                                     active
+
                                 );
 
                                 if (active) {
 
                                     link.setAttribute(
+
                                         "aria-current",
+
                                         "location"
+
                                     );
 
                                 } else {
 
                                     link.removeAttribute(
+
                                         "aria-current"
+
                                     );
 
                                 }
 
                             }
+
                         );
 
                     });
 
                 },
+
                 {
+
                     rootMargin: "-20% 0px -55% 0px",
+
                     threshold: 0
+
                 }
+
             );
 
             navigationSections.forEach(function (section) {
+
                 sectionObserver.observe(section);
+
             });
 
         }
 
 
         /* =========================================
-           06. INQUIRY CTA AUTOMATION
+           07. CONTACT CTA AUTOMATION
         ========================================= */
 
         const inquirySelect = document.getElementById(
+
             "inquiryType"
+
         );
 
         document.querySelectorAll("[data-inquiry]")
+
             .forEach(function (link) {
 
                 link.addEventListener("click", function () {
 
                     const selectedInquiry =
+
                         link.dataset.inquiry;
 
                     const validOption = Array.from(
+
                         inquirySelect.options
+
                     ).some(function (option) {
 
-                        return option.value === selectedInquiry;
+                        return option.value ===
+
+                            selectedInquiry;
 
                     });
 
                     if (validOption) {
 
-                        inquirySelect.value = selectedInquiry;
+                        inquirySelect.value =
+
+                            selectedInquiry;
 
                         inquirySelect.dispatchEvent(
+
                             new Event("change")
+
                         );
 
                     }
@@ -4682,60 +6749,108 @@
 
 
         /* =========================================
-           07. ACCESSIBLE GALLERY LIGHTBOX
+           08. ACCESSIBLE GALLERY LIGHTBOX
         ========================================= */
 
         const galleryImages = [
+
             {
+
                 src: "eb1.png",
+
                 alt: "Early Bird Coffee gallery photograph one"
+
             },
+
             {
+
                 src: "eb2.jpg",
+
                 alt: "Early Bird Coffee gallery photograph two"
+
             }
+
         ];
 
-        const lightbox = document.getElementById("lightbox");
+        const lightbox = document.getElementById(
+
+            "lightbox"
+
+        );
 
         const lightboxImage = document.getElementById(
+
             "lightboxImage"
+
         );
 
         const lightboxCaption = document.getElementById(
+
             "lightboxCaption"
+
         );
 
         const lightboxClose = document.getElementById(
+
             "lightboxClose"
+
         );
 
         const lightboxPrev = document.getElementById(
+
             "lightboxPrev"
+
         );
 
         const lightboxNext = document.getElementById(
+
             "lightboxNext"
+
         );
 
         let galleryIndex = 0;
+
         let previousFocus = null;
+
+        const backgroundElements = Array.from(
+
+            document.querySelectorAll(
+
+                ".site-header, main, .site-footer, .mobile-sticky"
+
+            )
+
+        );
+
 
         function updateLightbox() {
 
             const image = galleryImages[galleryIndex];
 
+            lightboxImage.removeAttribute(
+
+                "data-fallback-applied"
+
+            );
+
             lightboxImage.src = image.src;
+
             lightboxImage.alt = image.alt;
 
             lightboxCaption.textContent =
+
                 image.alt +
+
                 " — " +
+
                 (galleryIndex + 1) +
+
                 " of " +
+
                 galleryImages.length;
 
         }
+
 
         function openLightbox(index) {
 
@@ -4747,95 +6862,155 @@
 
             lightbox.hidden = false;
 
-            document.body.classList.add("lightbox-open");
+            document.body.classList.add(
+
+                "lightbox-open"
+
+            );
+
+            backgroundElements.forEach(function (element) {
+
+                element.inert = true;
+
+            });
 
             lightboxClose.focus();
 
         }
 
+
         function closeLightbox() {
 
             lightbox.hidden = true;
 
-            document.body.classList.remove("lightbox-open");
+            document.body.classList.remove(
+
+                "lightbox-open"
+
+            );
+
+            backgroundElements.forEach(function (element) {
+
+                element.inert = false;
+
+            });
 
             if (previousFocus) {
+
                 previousFocus.focus();
+
             }
 
         }
 
+
         function moveGallery(direction) {
 
             galleryIndex =
+
                 (
+
                     galleryIndex +
+
                     direction +
+
                     galleryImages.length
+
                 ) % galleryImages.length;
 
             updateLightbox();
 
         }
 
+
         document.querySelectorAll("[data-gallery-index]")
+
             .forEach(function (button) {
 
                 button.addEventListener("click", function () {
 
                     openLightbox(
+
                         Number(button.dataset.galleryIndex)
+
                     );
 
                 });
 
             });
 
-        lightboxClose.addEventListener("click", closeLightbox);
+
+        lightboxClose.addEventListener(
+
+            "click",
+
+            closeLightbox
+
+        );
 
         lightboxPrev.addEventListener("click", function () {
+
             moveGallery(-1);
+
         });
 
         lightboxNext.addEventListener("click", function () {
+
             moveGallery(1);
+
         });
 
         lightbox.addEventListener("click", function (event) {
 
             if (event.target === lightbox) {
+
                 closeLightbox();
+
             }
 
         });
 
+
         document.addEventListener("keydown", function (event) {
 
-            if (lightbox.hidden) {
-                return;
-            }
+            if (lightbox.hidden) return;
 
             if (event.key === "Escape") {
+
                 closeLightbox();
+
             }
 
             if (event.key === "ArrowLeft") {
+
+                event.preventDefault();
+
                 moveGallery(-1);
+
             }
 
             if (event.key === "ArrowRight") {
+
+                event.preventDefault();
+
                 moveGallery(1);
+
             }
 
             if (event.key === "Tab") {
 
                 const focusable = [
+
                     lightboxClose,
+
                     lightboxPrev,
+
                     lightboxNext
+
                 ];
 
                 const first = focusable[0];
+
                 const last = focusable[focusable.length - 1];
 
                 if (
@@ -4844,6 +7019,7 @@
                 ) {
 
                     event.preventDefault();
+
                     last.focus();
 
                 } else if (
@@ -4852,6 +7028,7 @@
                 ) {
 
                     event.preventDefault();
+
                     first.focus();
 
                 }
@@ -4860,74 +7037,96 @@
 
         });
 
+
+        /* MOBILE SWIPE SUPPORT */
+
         let touchStartX = 0;
+
         let touchStartY = 0;
 
         lightboxImage.addEventListener(
+
             "touchstart",
+
             function (event) {
 
-                touchStartX = event.changedTouches[0].screenX;
-                touchStartY = event.changedTouches[0].screenY;
+                touchStartX =
+
+                    event.changedTouches[0].screenX;
+
+                touchStartY =
+
+                    event.changedTouches[0].screenY;
 
             },
+
             { passive: true }
+
         );
 
         lightboxImage.addEventListener(
+
             "touchend",
+
             function (event) {
 
                 const differenceX =
+
                     event.changedTouches[0].screenX -
+
                     touchStartX;
 
                 const differenceY =
+
                     event.changedTouches[0].screenY -
+
                     touchStartY;
 
                 if (
+
                     Math.abs(differenceX) > 55 &&
+
                     Math.abs(differenceX) >
+
                     Math.abs(differenceY)
+
                 ) {
 
                     moveGallery(
+
                         differenceX < 0 ? 1 : -1
+
                     );
 
                 }
 
             },
+
             { passive: true }
+
         );
 
 
         /* =========================================
-           08. CONTACT FORM INTEGRATION
+           09. CONTACT FORM CONFIGURATION
 
-           IMPORTANT:
-           Add your actual backend endpoint below.
+           Insert your actual backend endpoint.
 
-           Formspree example:
+           Formspree:
            https://formspree.io/f/YOUR_FORM_ID
 
            GoHighLevel:
-           Use a secured backend relay connected
-           to your GHL inbound webhook.
+           Use a secure backend relay connected
+           to a GHL inbound webhook.
 
-           Never place private API keys in this file.
-
-           Leave the endpoint empty for preview mode.
-           Preview mode will NOT claim that a message
-           has been successfully delivered.
+           Never expose private API credentials
+           in frontend source code.
         ========================================= */
 
         const FORM_CONFIG = {
 
             endpoint: "",
 
-            // Supported formats: "formdata" or "json"
             format: "formdata",
 
             timeout: 20000
@@ -4935,19 +7134,27 @@
         };
 
         const inquiryForm = document.getElementById(
+
             "inquiryForm"
+
         );
 
         const submitButton = document.getElementById(
+
             "submitButton"
+
         );
 
         const submitButtonText = document.getElementById(
+
             "submitButtonText"
+
         );
 
         const formStatus = document.getElementById(
+
             "formStatus"
+
         );
 
         const formFields = {
@@ -4984,20 +7191,26 @@
 
         let formSubmitting = false;
 
+
         function setFieldError(key, message) {
 
             errorElements[key].textContent = message;
 
             formFields[key].setAttribute(
+
                 "aria-invalid",
+
                 message ? "true" : "false"
+
             );
 
         }
 
+
         function validateField(key) {
 
             const field = formFields[key];
+
             const value = field.value.trim();
 
             let error = "";
@@ -5007,42 +7220,63 @@
                 case "name":
 
                     if (value.length < 2) {
+
                         error = "Please enter your full name.";
+
                     }
 
                     break;
 
+
                 case "email":
 
                     if (
+
                         !value ||
+
                         field.validity.typeMismatch ||
+
                         !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)
+
                     ) {
 
                         error =
+
                             "Please enter a valid email address.";
 
                     }
 
                     break;
 
+
                 case "phone":
 
                     if (value) {
 
-                        const digits = value.replace(/\D/g, "");
+                        const digits = value.replace(
+
+                            /\D/g,
+
+                            ""
+
+                        );
 
                         const permitted =
+
                             /^[+\d\s().-]+$/.test(value);
 
                         if (
+
                             !permitted ||
+
                             digits.length < 7 ||
+
                             digits.length > 15
+
                         ) {
 
                             error =
+
                                 "Please enter a valid phone number.";
 
                         }
@@ -5051,35 +7285,43 @@
 
                     break;
 
+
                 case "inquiry":
 
                     if (!value) {
-                        error = "Please select an inquiry type.";
+
+                        error =
+
+                            "Please select an inquiry type.";
+
                     }
 
                     break;
+
 
                 case "message":
 
                     if (!value) {
 
-                        error =
-                            "Please enter your message.";
+                        error = "Please enter your message.";
 
                     } else if (value.length > 3000) {
 
                         error =
+
                             "Please keep your message under 3,000 characters.";
 
                     }
 
                     break;
 
+
                 case "consent":
 
                     if (!field.checked) {
 
                         error =
+
                             "Please confirm that we may contact you about your inquiry.";
 
                     }
@@ -5094,9 +7336,11 @@
 
         }
 
+
         function validateForm() {
 
             let valid = true;
+
             let firstInvalidField = null;
 
             Object.keys(formFields).forEach(function (key) {
@@ -5108,7 +7352,9 @@
                     valid = false;
 
                     if (!firstInvalidField) {
+
                         firstInvalidField = formFields[key];
+
                     }
 
                 }
@@ -5116,28 +7362,35 @@
             });
 
             if (firstInvalidField) {
+
                 firstInvalidField.focus();
+
             }
 
             return valid;
 
         }
 
+
         function showFormStatus(message, type) {
 
             formStatus.textContent = message;
 
             formStatus.className =
+
                 "form-status " + type;
 
         }
 
+
         function clearFormStatus() {
 
             formStatus.textContent = "";
+
             formStatus.className = "form-status";
 
         }
+
 
         Object.keys(formFields).forEach(function (key) {
 
@@ -5146,8 +7399,11 @@
             field.addEventListener("blur", function () {
 
                 if (
+
                     field.value ||
+
                     field.getAttribute("aria-invalid") === "true"
+
                 ) {
 
                     validateField(key);
@@ -5157,14 +7413,19 @@
             });
 
             const eventType =
+
                 key === "consent" || key === "inquiry"
-                    ? "change"
-                    : "input";
+
+                ? "change"
+
+                : "input";
 
             field.addEventListener(eventType, function () {
 
                 if (
+
                     field.getAttribute("aria-invalid") === "true"
+
                 ) {
 
                     validateField(key);
@@ -5175,23 +7436,31 @@
 
         });
 
+
+        /* =========================================
+           10. CONTACT FORM SUBMISSION
+        ========================================= */
+
         inquiryForm.addEventListener(
+
             "submit",
+
             async function (event) {
 
                 event.preventDefault();
 
-                if (formSubmitting) {
-                    return;
-                }
+                if (formSubmitting) return;
 
                 clearFormStatus();
 
                 if (!validateForm()) {
 
                     showFormStatus(
+
                         "Please review the highlighted fields before submitting.",
+
                         "error"
+
                     );
 
                     return;
@@ -5199,32 +7468,39 @@
                 }
 
                 const honeypot = document.getElementById(
+
                     "websiteField"
+
                 );
 
                 if (honeypot.value.trim()) {
 
                     showFormStatus(
+
                         "Your submission could not be processed. Please try again.",
+
                         "error"
+
                     );
 
                     return;
 
                 }
 
-                /*
-                    PREVIEW MODE
 
-                    Do not pretend that the form has
-                    submitted when no endpoint exists.
+                /*
+                    Preview mode:
+                    Do not report a false successful submission.
                 */
 
                 if (!FORM_CONFIG.endpoint.trim()) {
 
                     showFormStatus(
-                        "Online messaging is not currently connected. Your message has not been sent. Please call (210) 857-7769 to contact Early Bird Coffee.",
+
+                        "Online messaging is not currently connected. Your message has not been sent. Please use our Google Maps listing for current contact information.",
+
                         "notice"
+
                     );
 
                     formStatus.focus();
@@ -5238,60 +7514,91 @@
                 submitButton.disabled = true;
 
                 submitButtonText.textContent =
+
                     "Sending Your Message...";
 
                 inquiryForm.setAttribute(
+
                     "aria-busy",
+
                     "true"
+
                 );
 
                 const controller = new AbortController();
 
                 const timeout = window.setTimeout(
+
                     function () {
+
                         controller.abort();
+
                     },
+
                     FORM_CONFIG.timeout
+
                 );
 
                 try {
 
                     const formData = new FormData(
+
                         inquiryForm
+
                     );
 
                     formData.set(
+
                         "name",
+
                         formFields.name.value.trim()
+
                     );
 
                     formData.set(
+
                         "email",
+
                         formFields.email.value.trim()
+
                     );
 
                     formData.set(
+
                         "phone",
+
                         formFields.phone.value.trim()
+
                     );
 
                     formData.set(
+
                         "message",
+
                         formFields.message.value.trim()
+
                     );
 
                     formData.append(
+
                         "source",
+
                         "Early Bird Coffee Landing Page"
+
                     );
 
                     formData.append(
+
                         "submitted_at",
+
                         new Date().toISOString()
+
                     );
 
                     const headers = {
+
                         "Accept": "application/json"
+
                     };
 
                     let requestBody = formData;
@@ -5299,55 +7606,79 @@
                     if (FORM_CONFIG.format === "json") {
 
                         headers["Content-Type"] =
+
                             "application/json";
 
                         requestBody = JSON.stringify(
+
                             Object.fromEntries(
+
                                 formData.entries()
+
                             )
+
                         );
 
                     }
 
                     const response = await fetch(
+
                         FORM_CONFIG.endpoint,
+
                         {
+
                             method: "POST",
+
                             headers: headers,
+
                             body: requestBody,
+
                             signal: controller.signal
+
                         }
+
                     );
 
                     if (!response.ok) {
 
                         throw new Error(
+
                             "The server rejected the submission."
+
                         );
 
                     }
 
                     const contentType =
+
                         response.headers.get("content-type") || "";
 
-                    if (
-                        contentType.includes("application/json")
-                    ) {
+                    if (contentType.includes("application/json")) {
 
                         const result = await response.json();
 
                         if (
+
                             result.success === false ||
+
                             result.ok === false ||
+
                             result.error ||
+
                             (
+
                                 Array.isArray(result.errors) &&
+
                                 result.errors.length > 0
+
                             )
+
                         ) {
 
                             throw new Error(
+
                                 "The submission was not accepted."
+
                             );
 
                         }
@@ -5357,6 +7688,7 @@
                     inquiryForm.reset();
 
                     Object.keys(formFields)
+
                         .forEach(function (key) {
 
                             setFieldError(key, "");
@@ -5364,8 +7696,11 @@
                         });
 
                     showFormStatus(
+
                         "Thank you! Your inquiry has been submitted successfully.",
+
                         "success"
+
                     );
 
                     formStatus.focus();
@@ -5373,17 +7708,21 @@
                 } catch (error) {
 
                     const timedOut =
+
                         error.name === "AbortError";
 
                     const errorMessage = timedOut
 
-                        ? "The request timed out and we could not confirm delivery. Please call us before resubmitting."
+                        ? "The request timed out and delivery could not be confirmed. Please check before resubmitting."
 
-                        : "We could not confirm that your message was delivered. Please try again later or call (210) 857-7769.";
+                        : "We could not confirm that your message was delivered. Please try again later.";
 
                     showFormStatus(
+
                         errorMessage,
+
                         "error"
+
                     );
 
                     formStatus.focus();
@@ -5397,68 +7736,99 @@
                     submitButton.disabled = false;
 
                     submitButtonText.textContent =
+
                         "Send Your Message";
 
                     inquiryForm.setAttribute(
+
                         "aria-busy",
+
                         "false"
+
                     );
 
                 }
 
             }
+
         );
 
 
         /* =========================================
-           09. IMAGE LOADING FALLBACKS
+           11. IMAGE LOADING FALLBACKS
 
-           Provides a branded fallback when an
-           external or local image cannot load.
+           Prevent broken or completely empty
+           gallery panels when an asset is missing.
         ========================================= */
 
         const fallbackSVG =
 
             '<svg xmlns="http://www.w3.org/2000/svg" ' +
+
             'width="1000" height="800" viewBox="0 0 1000 800">' +
 
             '<rect width="1000" height="800" fill="#e9dfcf"/>' +
 
             '<circle cx="500" cy="325" r="110" ' +
+
             'fill="none" stroke="#c39a59" stroke-width="2"/>' +
 
             '<circle cx="500" cy="325" r="95" ' +
+
             'fill="none" stroke="#c39a59" stroke-width="1"/>' +
 
             '<path d="M500 185v35 M500 430v35 ' +
+
             'M360 325h35 M605 325h35 ' +
+
             'M400 225l25 25 M575 400l25 25 ' +
+
             'M400 425l25-25 M575 250l25-25" ' +
+
             'stroke="#c39a59" stroke-width="2"/>' +
 
             '<text x="500" y="535" text-anchor="middle" ' +
+
             'font-size="45" font-family="Georgia,serif" ' +
+
             'fill="#292119">Early Bird Coffee</text>' +
 
             '<text x="500" y="580" text-anchor="middle" ' +
+
             'font-size="18" font-family="Arial,sans-serif" ' +
+
             'letter-spacing="3" fill="#746b61">' +
-            'SAN ANTONIO, TEXAS</text>' +
+
+            'PHOTO CURRENTLY UNAVAILABLE</text>' +
 
             '</svg>';
 
         const fallbackImage =
+
             "data:image/svg+xml;charset=UTF-8," +
+
             encodeURIComponent(fallbackSVG);
 
+
         document.querySelectorAll("img").forEach(
+
             function (image) {
 
                 function handleImageError() {
 
                     if (image.dataset.fallbackApplied) {
+
                         return;
+
                     }
+
+                    console.warn(
+
+                        "Image could not be loaded:",
+
+                        image.getAttribute("src")
+
+                    );
 
                     image.dataset.fallbackApplied = "true";
 
@@ -5467,13 +7837,19 @@
                 }
 
                 image.addEventListener(
+
                     "error",
+
                     handleImageError
+
                 );
 
                 if (
+
                     image.complete &&
+
                     image.naturalWidth === 0
+
                 ) {
 
                     handleImageError();
@@ -5481,9 +7857,11 @@
                 }
 
             }
+
         );
 
     </script>
 
 </body>
+
 </html>
